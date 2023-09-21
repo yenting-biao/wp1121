@@ -1,0 +1,129 @@
+.modal {
+  display: none;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 60px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  margin-bottom: 10px;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#diary-add-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.add-page-title h3 {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.date-section {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+#date-result {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+
+textarea#diary-description-input {
+  width: 100%;
+  margin-top: 1rem;
+  height: 5rem;
+  resize: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+}
+
+/* modal-2 */
+
+.diary-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.diary-header p {
+  display: inline-block;
+  justify-content: center;
+  margin: 0;
+}
+
+.diary-header::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 200%;
+  background-color: #ccc;
+  margin: 0.5rem 0;
+}
+
+.diary-top-info p {
+  margin: 0;
+  line-height: 1;
+}
+
+.diary-tags {
+  border-radius: 3px;
+  border-color: black;
+  border-style: bold;
+  background-color: #f55;
+  text-align: center;
+}
+
+.diary-moods {
+  border-radius: 3px;
+  border-color: black;
+  border-style: bold;
+  background-color: yellow;
+  text-align: center;
+}
+
+.diary-edit-button {
+  display: flex;
+  justify-content: flex-end; /* 讓內部元素向右對齊 */
+  align-items: center; /* 讓內部元素垂直居中對齊 */
+  margin-right: 10px;
+}
+
+#edit-diary-button:hover {
+  cursor: pointer;
+}
+
+.filter-modal-button {
+  margin-top: 10px;
+}

@@ -1,0 +1,107 @@
+#diaries {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  column-gap: 15px;
+  row-gap: 35px;
+
+  margin-left: 10px;
+  margin-right: 10px;
+
+  padding-top: 30px;
+}
+
+.todo-item {
+  background-color: #ffffffcb;
+  border: 1px solid #0a0a0a;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.todo-item:hover {
+  cursor: pointer;
+  background-color: #ffffff69;
+  border: 1.5px solid #0a0a0a;
+  transition: 0.1s;
+}
+
+@media (max-width: 600px) {
+  #diaries {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 600.02px) and (max-width: 1000px) {
+  #diaries {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000.02px) and (max-width: 1200px) {
+  #diaries {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1200.02px) and (max-width: 1300px) {
+  #diaries {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1300.02px) {
+  #diaries {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+
+.title-info {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr;
+  margin: 0;
+}
+
+.title-info p {
+  margin: 0;
+  line-height: 1;
+}
+
+.preview-tag {
+  border-radius: 3px;
+  border-color: black;
+  border-style: bold;
+  background-color: #f55;
+  text-align: center;
+}
+
+.preview-mood {
+  border-radius: 3px;
+  border-color: black;
+  border-style: bold;
+  background-color: yellow;
+  text-align: center;
+}
+
+.todo-description {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  word-break: break-word;
+
+  margin-bottom: 0;
+  margin-top: 0.5rem;
+}
+
+.todo-item button {
+  font-size: 1rem;
+  border-radius: 999px;
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+  background-color: #f55;
+  color: #fff;
+}
+.todo-item button:hover {
+  background-color: #f77;
+}

@@ -1,0 +1,63 @@
+header {
+  background-color: rgb(255, 255, 255);
+  height: 50px;
+
+  display: grid;
+  grid-template-columns: 2fr 4fr 2fr;
+  /*flex-direction: row;*/
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+#menu {
+  margin-left: 20px;
+  margin-right: 10px;
+  justify-content: flex-start;
+  display: flex;
+}
+
+.menu-element {
+  width: 28px;
+  height: 4px;
+  background-color: black;
+  margin: 5px 0;
+}
+
+#display-current-filter {
+  margin: 0;
+  justify-content: flex-end;
+  display: flex;
+  font-size: 13px;
+}
+
+.mid-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 23px;
+  text-align: left;
+  z-index: 1;
+}
+
+.right-section {
+  justify-content: flex-end;
+  display: flex;
+  z-index: 1;
+}
+
+#add-diary-button {
+  margin-left: 20px;
+  margin-right: 20px;
+}

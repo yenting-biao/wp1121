@@ -1,0 +1,23 @@
+:root {
+  --todo-intput-height: 3rem;
+  --todo-intput-font-size: 2rem;
+}
+
+body {
+  background-color: rgb(202, 202, 202);
+  /*max-width: 600px;*/
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 15vh;
+
+  font-family: Arial;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+button:hover {
+  cursor: pointer;
+}

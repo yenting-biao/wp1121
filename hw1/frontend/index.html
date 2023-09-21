@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>My Diary</title>
+
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/section.css" />
+    <link rel="stylesheet" href="styles/modal.css" />
+    <script defer src="index.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.0/axios.min.js"
+      integrity="sha512-aoTNnqZcT8B4AmeCFmiSnDlc4Nj/KPaZyB5G7JnOnUEkdNpCZs1LCankiYi01sLTyWy+m2P+W4XM+BuQ3Q4/Dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="left-section">
+        <!--<div id="menu">
+          <div class="menu-element"></div>
+          <div class="menu-element"></div>
+          <div class="menu-element"></div>
+        </div>-->
+        <button id="menu">篩選</button>
+        <div>
+          <p id="display-current-filter">目前所顯示日記本：所有日記本</p>
+        </div>
+      </div>
+      <div class="mid-section">My Diary</div>
+      <div class="right-section">
+        <button id="add-diary-button">新增日記本</button>
+      </div>
+    </header>
+
+    <!-- The Modal for add a diary -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">取消</span>
+
+        <div class="add-page-title">
+          <h3>編輯日記</h3>
+        </div>
+
+        <div class="modal-body">
+          <div class="date-section">
+            <label for="date-today">請選擇日期：</label>
+
+            <input type="date" id="date-today" name="date-today" />
+            <p id="date-result" style="display: inline-block"></p>
+
+            <script>
+              const datePicker = document.querySelector("#date-today");
+              const result = document.querySelector("#date-result");
+
+              // 取得今天的日期
+              const today = new Date();
+              const year = today.getFullYear();
+              const month = (today.getMonth() + 1).toString().padStart(2, "0");
+              const day = today.getDate().toString().padStart(2, "0");
+              const dayOfWeek = today.toLocaleDateString("zh-TW", {
+                weekday: "short",
+              })[1];
+
+              datePicker.valueAsDate = new Date();
+              result.textContent = `${year}.${month}.${day} (${dayOfWeek})`;
+              datePicker.addEventListener("change", function () {
+                const selectedDate = new Date(this.value);
+                const year = selectedDate.getFullYear();
+                const month = (selectedDate.getMonth() + 1)
+                  .toString()
+                  .padStart(2, "0");
+                const day = selectedDate.getDate().toString().padStart(2, "0");
+                const dayOfWeek = selectedDate.toLocaleDateString("zh-TW", {
+                  weekday: "short",
+                })[1];
+                result.textContent = `${year}.${month}.${day} (${dayOfWeek})`;
+              });
+            </script>
+          </div>
+
+          <div class="tag-mood-section">
+            <div>
+              <label for="tag-choice">請選擇標籤：</label>
+              <select id="tag-choice">
+                <option value="學業">學業</option>
+                <option value="人際">人際</option>
+                <option value="社團">社團</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="mood-choice">請選擇心情：</label>
+              <select id="mood-choice">
+                <option value="快樂">快樂</option>
+                <option value="生氣">生氣</option>
+                <option value="難過">難過</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <textarea
+              id="diary-description-input"
+              placeholder="日記內文"
+              tabindex="2"
+            ></textarea>
+          </div>
+        </div>
+
+        <div id="diary-add-container">
+          <button id="diary-add" tabindex="3">儲存</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- The modal for browse a diary detail -->
+    <div id="myModal-2" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="diary-header">
+          <div class="diary-top-info">
+            <p class="diary-date"></p>
+            <p class="diary-tags"></p>
+            <p class="diary-moods"></p>
+          </div>
+          <div class="diary-edit-button">
+            <button id="edit-diary-button">編輯日記本</button>
+          </div>
+          <span class="close" id="modal2-close">&times;</span>
+        </div>
+
+        <div class="diary-content-div">
+          <p class="diary-content"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- The modal for filter diary categories -->
+    <div id="filter-modal" class="modal">
+      <div class="modal-content">
+        <div class="filter-modal-content">
+          <label for="filter-selection">請選擇您想顯示的日記本類別：</label>
+          <select id="filter-selection">
+            <option>所有日記本</option>
+            <option>學業</option>
+            <option>人際</option>
+            <option>社團</option>
+            <option>快樂</option>
+            <option>生氣</option>
+            <option>難過</option>
+          </select>
+        </div>
+        <div class="filter-modal-button">
+          <button id="filter-modal-enter">確定</button>
+          <button id="filter-modal-cancel" class="span">取消</button>
+        </div>
+      </div>
+    </div>
+
+    <section id="diaries"></section>
+  </body>
+
+  <template id="diary-item-template">
+    <div class="todo-item">
+      <div class="title-info">
+        <p class="preview-date">todo 1</p>
+        <p class="preview-tag">tag</p>
+        <p class="preview-mood">mood</p>
+        <!--<button data-id="" class="delete-todo">delete</button>-->
+      </div>
+      <div class="todo-description-parent">
+        <p class="todo-description">todo 1 description</p>
+      </div>
+    </div>
+  </template>
+</html>
