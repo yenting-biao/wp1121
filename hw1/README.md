@@ -1,4 +1,16 @@
-# 112-1-unit1
+# HW1
+
+## Usage
+
+The code is modified from the reference code used in the class. The set-up of the frontend and backend is the same to [112-1-unit1-todo-list](https://github.com/ntuee-web-programming/112-1-unit1-todo-list). Please follow the steps taught in the class to set up MongoDB and other things.
+
+### Function of the diary website
+
+* Click the button, "新增日記本", and you can post a new diary. The user can choose the date of the diary, and he/she cannot input an invalid date.
+* After some diaries are created, you can click the grid of any diary to show the full content of the diary description. Click the button, "編輯日記本", to edit the diary.
+* Click the button, "篩選", to filter the category of the diaries you want to display.
+
+Below are the original README.md content of the reference code, [112-1-unit1-todo-list](https://github.com/ntuee-web-programming/112-1-unit1-todo-list).
 
 ## API documentation
 
@@ -237,9 +249,11 @@ yarn init -y
 
 - In `/backend` directory, create a file named `.env`
 - Add some lines in `.env`
+
   ```bash
   PORT=8000
   ```
+
   Remember to add `.env` to `.gitignore` file. This is to prevent sensitive information from being exposed.
 
 ### 4. Install dependencies
@@ -273,7 +287,7 @@ Next time you can just have to run `yarn start` to start the server. Step 1-4 ar
 3. Add the following line in `backend/.env` file
 
 ```bash
-MONGO_URI=<your connection string>
+MONGO_URL=<your connection string>
 ```
 
 4. Install dependencies
