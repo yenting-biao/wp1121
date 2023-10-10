@@ -58,12 +58,15 @@ export default function CardListPage({
     if (!inputRef.current) return;
 
     const newName = inputRef.current.value;
-    if (newName !== name) {
+    if (newName === ""){
+      alert("Please enter a new name for this playlist")
+    }
+    else if (newName !== name) {
       try {
         await updateList(id, { name: newName });
         fetchLists();
       } catch (error) {
-        alert("Error: Failed to update list name");
+        alert("Error: Failed to update playlist name");
       }
     }
     setEdittingName(false);
@@ -73,12 +76,15 @@ export default function CardListPage({
     if (!inputRefDes.current) return;
 
     const newDescription = inputRefDes.current.value;
-    if (newDescription !== description) {
+    if (newDescription == ""){
+      alert("Please enter a new description for this playlist")
+    }
+    else if (newDescription !== description) {
       try {
         await updateList(id, { description: newDescription });
         fetchLists();
       } catch (error) {
-        alert("Error: Failed to update list name");
+        alert("Error: Failed to update playlist description");
       }
     }
     setEdittingDescription(false);

@@ -24,16 +24,28 @@ export default function NewListDialog({ open, onClose }: NewListDialogProps) {
 
   const handleAddList = async () => {
     try {
-      await createList({
+      const name = textfieldRef.current?.value ?? "";
+      const description = textfieldRefDes.current?.value?? "";
+      /*await createList({
         name: textfieldRef.current?.value ?? "",
         description: textfieldRefDes.current?.value ?? "",
-      });
+      });*/
+      if(name === "") {
+        alert("Please fill in the name of the playlist"!);
+        return;
+      } else if (description === "") {
+        alert("Please fill in the description of the playlist"!);
+        return;
+      } else {
+        await createList({
+          name, description
+        });
+      }
       fetchLists();
-    } catch (error) {
-      alert("Error: Failed to create list");
-    } finally {
       onClose();
-    }
+    } catch (error) {
+      alert("Please fill in all the fields to create the list.");
+    } 
   };
 
   return (

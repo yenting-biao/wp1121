@@ -74,12 +74,25 @@ export default function CardDialog(props: CardDialogProps) {
   const handleSave = async () => {
     try {
       if (variant === "new") {
-        await createCard({
-          title: newTitle,
-          description: newDescription,
-          link: newLink,
-          list_id: listId,
-        });
+        if(newTitle === "" ) {
+          setNewTitle(title);
+          alert("Please fill in the name of the song to save the song.");
+          return;
+        } else if(newDescription === "") {
+          alert("Please fill in the singer to save the song.");
+          return;
+        } else if(newLink === "") {
+          alert("Please fill in the link to save the song.");
+          return;
+        } else{
+          await createCard({
+            title: newTitle,
+            description: newDescription,
+            link: newLink,
+            list_id: listId,
+          });
+        }
+        
       } else {
         if (
           newTitle === title &&
@@ -89,26 +102,50 @@ export default function CardDialog(props: CardDialogProps) {
         ) {
           return;
         } else if (newListId !== listId) {
-          await createCard({
-            title: newTitle,
-            description: newDescription,
-            link: newLink,
-            list_id: newListId,
-          });
+          if(newTitle === "" ) {
+            alert("Please fill in the name of the song to save the song.");
+            return;
+          } else if(newDescription === "") {
+            alert("Please fill in the singer to save the song.");
+            return;
+          } else if(newLink === "") {
+            alert("Please fill in the link to save the song.");
+            return;
+          } else{
+            await createCard({
+              title: newTitle,
+              description: newDescription,
+              link: newLink,
+              list_id: newListId,
+            });
+          }
+          
         } else {
           // typescript is smart enough to know that if variant is not "new", then it must be "edit"
           // therefore props.cardId is a valid value
-          await updateCard(props.cardId, {
-            title: newTitle,
-            description: newDescription,
-            link: newLink,
-            list_id: newListId,
-          });
+          if(newTitle === "" ) {
+            alert("Please fill in the name of the song to save the song.");
+            return;
+          } else if(newDescription === "") {
+            alert("Please fill in the singer to save the song.");
+            return;
+          } else if(newLink === "") {
+            alert("Please fill in the link to save the song.");
+            return;
+          } else{
+            await updateCard(props.cardId, {
+              title: newTitle,
+              description: newDescription,
+              link: newLink,
+              list_id: newListId,
+            });
+          }
         }
       }
       fetchCards();
+      handleClose();
     } catch (error) {
-      alert("Error: Failed to save card");
+      alert("Please fill in all the fields to save the song!!");
     } finally {
       handleClose();
     }

@@ -9,8 +9,6 @@ import CardList from "@/components/CardList";
 import type { CardListPageProps } from "@/components/CardListPage";
 import CardListPage from "@/components/CardListPage";
 import HeaderBar from "@/components/HeaderBar";
-//import SongListGrid from "@/components/SongListGrid";
-//import SongList from "@/components/SongList";
 import NewListDialog from "@/components/NewListDialog";
 import SubHeaderBar from "@/components/SubHeaderBar";
 import useCards from "@/hooks/useCards";
@@ -21,6 +19,7 @@ function App() {
   const [newListDialogOpen, setNewListDialogOpen] = useState(false);
   const [showDeleteButton, setShowDeleteButton] = useState(false);
   const [selectedCardListId, setSelectedCardListId] = useState("");
+  const [searchText, setSearchText] = useState("");
 
   useEffect(() => {
     fetchLists();
@@ -36,38 +35,41 @@ function App() {
             onclickAdd={() => setNewListDialogOpen(true)}
             onclickDelete={() => setShowDeleteButton(!showDeleteButton)}
             deleteText={showDeleteButton}
+            onSearch={(t: string) => setSearchText(t)}
           />
           <main className="mx-auto flex max-h-full flex-row gap-6 px-24 py-12">
-            {/*<Box sx={{ flexGrow: 1 }}>
-            <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 2, sm: 8, md: 12, lg: 16, xl: 24}}>
-              {Array.from(Array(13)).map((_, index) => (
-                <Grid xs={2} sm={4} md={4} key={index}>
-                  <SongList />
-                </Grid>
-              ))}
-            </Grid>
-            </Box>*/}
-
             <Box sx={{ flexGrow: 1 }}>
-              <Grid
-                container
-                spacing={{ xs: 2, md: 3 }}
-                columns={{ xs: 2, sm: 8, md: 12, lg: 16, xl: 24 }}
-              >
-                {lists.map((list) => (
-                  <Grid xs={2} sm={4} md={4} key={list.id}>
-                    <CardList
-                      key={list.id}
-                      {...list}
-                      showDelete={showDeleteButton}
-                      onclickCard={() => {
-                        setShowHomePage(false);
-                        setSelectedCardListId(list.id);
-                      }}
-                    />
-                  </Grid>
-                ))}
-              </Grid>
+            <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 2, sm: 8, md: 12, lg: 16, xl: 24 }}>
+              {searchText === "" 
+                ? lists.map((list) => (
+                    <Grid xs={2} sm={4} md={4} key={list.id}>
+                      <CardList
+                        key={list.id}
+                        {...list}
+                        showDelete={showDeleteButton}
+                        onclickCard={() => {
+                          setShowHomePage(false);
+                          setSelectedCardListId(list.id);
+                        }}
+                      />
+                    </Grid>
+                  ))
+                : lists
+                    .filter((list) => list.name.toLowerCase().includes(searchText.toLowerCase()))
+                    .map((list) => (
+                      <Grid xs={2} sm={4} md={4} key={list.id}>
+                        <CardList
+                          key={list.id}
+                          {...list}
+                          showDelete={showDeleteButton}
+                          onclickCard={() => {
+                            setShowHomePage(false);
+                            setSelectedCardListId(list.id);
+                          }}
+                        />
+                      </Grid>
+                    ))}
+            </Grid>
             </Box>
             {/*<div>
             <Button
@@ -79,7 +81,6 @@ function App() {
               Add a list
             </Button>
           </div>*/}
-            {/*<SongListGrid />*/}
             <NewListDialog
               open={newListDialogOpen}
               onClose={() => setNewListDialogOpen(false)}
