@@ -51,7 +51,7 @@ yarn dev
 
 Visit `http://localhost:5173` to see the app in action. That's it, you're done!
 
-Also note that please start the backend server first.
+**Also note that please start the backend server first. Make sure that you have connected to MongoDB before you start the frontend server.**
 
 ## eslint and prettier
 
