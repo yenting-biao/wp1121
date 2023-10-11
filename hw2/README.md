@@ -51,6 +51,8 @@ yarn dev
 
 Visit `http://localhost:5173` to see the app in action. That's it, you're done!
 
+Also note that please start the backend server first.
+
 ## eslint and prettier
 
 Please run the following commands.
