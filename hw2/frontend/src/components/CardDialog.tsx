@@ -68,14 +68,20 @@ export default function CardDialog(props: CardDialogProps) {
       setNewDescription(description);
       setNewLink(link);
       setNewListId(listId);
+    } else {
+      setNewTitle("");
+      setNewDescription("");
+      setNewLink("");
+      //setNewListId("");
     }
   };
 
   const handleSave = async () => {
     try {
       if (variant === "new") {
+        console.log("new");
         if(newTitle === "" ) {
-          setNewTitle(title);
+          //setNewTitle(title);
           alert("Please fill in the name of the song to save the song.");
           return;
         } else if(newDescription === "") {
@@ -94,6 +100,7 @@ export default function CardDialog(props: CardDialogProps) {
         }
         
       } else {
+        console.log("edit");
         if (
           newTitle === title &&
           newDescription === description &&
@@ -143,7 +150,7 @@ export default function CardDialog(props: CardDialogProps) {
         }
       }
       fetchCards();
-      handleClose();
+      //handleClose();
     } catch (error) {
       alert("Please fill in all the fields to save the song!!");
     } finally {

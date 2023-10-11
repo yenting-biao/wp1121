@@ -80,7 +80,8 @@ cd backend && yarn lint
 * Click ADD button to create a new song; you can also choose the playlist you want to add it in.
 * Select the checkbox of the songs you want to delete and click the DELETE button.
 * Click the link, which is blue and underlined, to open the link in the new tab.
-* Click *"**the name of the song or the singer"* to edit this song. You can also not modify the song name, the singer, and the link, but just change the playlist, to add it into another playlist (but it will still remain at this playlist).
+* Click "*the name of the song or the singer"* to edit this song. You can also not modify the song name, the singer, and the link, but just change the playlist, to add it into another playlist (but it will still remain at this playlist).
+* Note that when you delete many songs from the playlist, you may have to wait for a while.
 
 ---
 
