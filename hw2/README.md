@@ -1,8 +1,8 @@
-# 112-1-unit1-trello-clone
+# HW2 WP Music
 
 ## Run the app
 
-Follow the instructions in this section to run the app locally.
+Follow the instructions in this section to run the app locally. The set up is the same to the reference code, `trello-clone`.
 
 ### 1. setup backend `.env`
 
@@ -49,7 +49,7 @@ cd frontend
 yarn dev
 ```
 
-Visit `http://localhost:5173` to see the app in action. That's it, you're done! If you want to set up the whole project from scratch, you can follow the instructions below.
+Visit `http://localhost:5173` to see the app in action. That's it, you're done!
 
 ## eslint and prettier
 
@@ -66,4 +66,22 @@ cd backend && yarn lint
 1. **使用者提示**：當使用者未輸入資訊或是進行錯誤操作時，給予適當提示。例如使用者新增或編輯清單時，未輸入標題，以彈窗提示「請輸入標題」。
 2. **搜尋**：在首頁實作搜尋功能，透過輸入關鍵字尋找相對應之清單。
 
-## Demo
+## Explanation about the app
+
+##### Home page
+
+* Click the ADD button to create a new playlist.
+* Click the DELETE button, and click the trash can on the top-right corner of the playlist, to delete the playlist. When you finish deleting, click the DONE button.
+* Type something in the search bar and press enter to filter the search the playlist. After that, if you want to show all the playlist, please clear the input in the search bar and press enter again.
+
+##### Playlist page
+
+* Click the playlist title to edit it. Click the playlist description to edit it.
+* Click ADD button to create a new song; you can also choose the playlist you want to add it in.
+* Select the checkbox of the songs you want to delete and click the DELETE button.
+* Click the link, which is blue and underlined, to open the link in the new tab.
+* Click *"**the name of the song or the singer"* to edit this song. You can also not modify the song name, the singer, and the link, but just change the playlist, to add it into another playlist (but it will still remain at this playlist).
+
+---
+
+---

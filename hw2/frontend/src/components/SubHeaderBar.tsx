@@ -68,7 +68,7 @@ export default function SubHeaderBar({
   const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
     if (event.key === 'Enter') {
       // 用户按下了 Enter 键，执行搜索操作
-      console.log(searchText);
+      //console.log(searchText);
       onSearch(searchText);
     }
   };
