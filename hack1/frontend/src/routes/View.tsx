@@ -6,19 +6,35 @@ import { useUser } from '@/contexts/UserContext';
 
 const View = (): React.ReactNode => {
   const { user } = useUser();
-  const { getPostByIndex, votePost } = usePost();
+  const { getPostByIndex, votePost, numPosts } = usePost();
 
   /* (1/3) TODO 2.2: Navigation with `ViewFooter` Buttons (8%) */
   /* Hint 2.2.1: Link page index to React state */
   const [selectedIndex, setSelectedIndex] = useState<number>(0);
-  const post = getPostByIndex(0);
+  const post = getPostByIndex(selectedIndex);
   /* End (1/3) TODO 2.2 */
 
   /* (3/3) TODO 2.2: Navigation with `ViewFooter` Buttons (8%) */
   /* Hint 2.2.4: Finish next and prev click Handler */
   /* Hint 2.2.5: Refer to `PostContext` for more clue */
-  const handleNextClick = useCallback(() => {}, []);
-  const handlePrevClick = useCallback(() => {}, []);
+  //const handleNextClick = useCallback(() => {}, []);
+  //const handlePrevClick = useCallback(() => {}, []);
+
+  const handleNextClick = useCallback(() => {
+    if(selectedIndex + 1 >= numPosts){
+      setSelectedIndex(0);
+    }else{
+      setSelectedIndex(selectedIndex + 1);
+    }
+  }, [selectedIndex]);
+  
+  const handlePrevClick = useCallback(() => {
+    if(selectedIndex - 1 < 0){
+      setSelectedIndex(numPosts - 1);
+    }else{
+      setSelectedIndex(selectedIndex - 1);
+    }
+  }, [selectedIndex]);
   /* End (3/3) TODO 2.2 */
 
   /* (1/3) TODO 2.4: Handle Voting for Unvoted Posts (8%) */
@@ -72,8 +88,8 @@ const View = (): React.ReactNode => {
           upvoteClickHandler={() => {}}
           hasDownvoted={false}
           hasUpvoted={false}
-          nextClickHandler={() => {}}
-          prevClickHandler={() => {}}
+          nextClickHandler={handleNextClick}
+          prevClickHandler={handlePrevClick}
           totalVotes={0}
           loading={false}
         />
