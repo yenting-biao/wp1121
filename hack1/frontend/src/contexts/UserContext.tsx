@@ -10,6 +10,8 @@ import { AxiosError } from 'axios';
 import { useToast } from '@/components/ui/use-toast';
 import { UserService } from '@/services/userService';
 
+import { useEffect } from 'react';
+
 type UserContextType = {
   user: User | null;
   authenticated: boolean;
@@ -38,6 +40,17 @@ export const UserProvider = ({ children }: PropsWithChildren) => {
   /* Reference: https://reactrouter.com/en/6.16.0/hooks/use-navigate */
   /*            https://reactrouter.com/en/6.16.0/hooks/use-location */
   /*            https://github.com/remix-run/history/blob/main/docs/api-reference.md#location */
+
+  // 使用 useLocation 來獲取當前路徑
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    // 檢查用戶是否未驗證且不在登錄或註冊頁面
+    if (!authenticated && !['/login', '/register'].includes(pathname)) {
+      // 執行重定向到登錄頁面
+      navigate('/login');
+    }
+  }, [authenticated, pathname]);
 
   /* Reminder: Don't import this useEffect hook if you are tired of being redirected to the login page. */
   /* Warning: But remember to add it back before submitting your work. */
