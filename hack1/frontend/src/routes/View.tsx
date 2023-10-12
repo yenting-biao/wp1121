@@ -57,7 +57,7 @@ const View = (): React.ReactNode => {
       {/* TODO 2.1: Render Post With `PostCard` and `PostContext` (3%) */}
       {/* Hint 2.1.1: Pass correct arguments to `PostCard` component */}
       {/* Hint 2.1.2: Arguments `post` should be Modified */}
-      <PostCard post={null} />
+      <PostCard post={post} />
       {/* End TODO 2.1 */}
 
       <div className="mt-auto">
