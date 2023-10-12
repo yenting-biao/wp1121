@@ -33,9 +33,32 @@ export const createUser = asyncWrapper(
     /* Create new user using `UserModel` */
     /* Return 201 with new user */
 
-    // throw new Error('`createUser` Not Implemented');
+    //throw new Error('`createUser` Not Implemented');
 
-    
+
+    console.log(req.body);
+    try {
+      // 解構 User.Post.Payload 中的數據
+      const { username, password } = req.body;
+
+      // 創建新用戶
+      const newUser = await UserModel.create({
+        username,
+        password,
+      });
+
+      // 保存新用戶到數據庫
+      // await newUser.save();
+
+      // 返回 201 狀態碼和新用戶的 ID
+      //res.status(201).json({ id: newUser._id as string });
+      res.status(201).json(newUser);
+    } catch (error) {
+      // 如果出現錯誤，返回錯誤消息
+      //res.status(500).json({ message: 'User creation failed' });
+      //res.status(400).json({ error: 'User registration failed' });
+    }
+
     /* End of TODO 1.5 */
   },
 );
