@@ -78,11 +78,11 @@ const Create = (): React.ReactNode => {
         {/* TODO 3.2: Create a New Post With the Editor (3%) */}
         {/* Hint 3.2.1: Use `getPostIndicesByUserId` from `PostContext` to fetch logged in user's post indices */}
         {user &&
-          [].map((postIndex) => {
+          getPostIndicesByUserId(user._id).map((postIndex) => {
             {
               /* Hint 3.2.2: Get post data with `getPostByIndex` from `PostContext` */
             }
-            const post = getPostByIndex(0);
+            const post = getPostByIndex(postIndex);
             if (post === null) return <></>;
             return (
               <span
@@ -106,6 +106,7 @@ const Create = (): React.ReactNode => {
                 ></img>
                 {/* Hint 3.2.3: Display post title here */}
                 {/* Post Title */}
+                <span>{post.title}</span>
               </span>
             );
           })}
