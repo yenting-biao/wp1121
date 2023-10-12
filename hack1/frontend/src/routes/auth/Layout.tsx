@@ -51,9 +51,19 @@ const AuthLayout = () => {
       /* Here, a toast is a small, non-blocking notification pop-up. */
       /* They can be created via the `toast` function provided by `useToast()` */
       /* Reference: https://ui.shadcn.com/docs/components/toast#usage */
+      
+      if (password !== confirmPassword) {
+        // Passwords do not match, display a toast
+        toast({
+          description: "Passwords do not match",
+          variant: 'destructive',
+        });
+      } else {
+        register(username, password);
+      }
 
       /* End of TODO 1.5 */
-      register(username, password);
+      //register(username, password);
     }
   };
 
@@ -117,6 +127,10 @@ const AuthLayout = () => {
                 type="text"
                 name="username"
                 autoComplete="username"
+                placeholder="Enter Username" // Add placeholder
+                required
+                value={username} // the `username` state
+                onChange={(e) => setUsername(e.target.value)} // the `username` state
               />
               {/* End of TODO 1.4 */}
             </div>
@@ -133,6 +147,10 @@ const AuthLayout = () => {
                 type="password"
                 name="password"
                 autoComplete="current-password"
+                placeholder="Enter Password" // Add placeholder
+                required
+                value={password} // the `password` state
+                onChange={(e) => setPassword(e.target.value)} // the `password` state
               />
               {/* End of TODO 1.4 */}
             </div>
@@ -155,6 +173,10 @@ const AuthLayout = () => {
                 type="password"
                 name="confirm-password"
                 autoComplete="new-password"
+                placeholder="Confirm Password"
+                required={location.pathname === '/register'} // todo: idk
+                value={confirmPassword} 
+                onChange={(e) => setConfirmPassword(e.target.value)} 
               />
               {/* End of TODO 1.5 */}
             </div>

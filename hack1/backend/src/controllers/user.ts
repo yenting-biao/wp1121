@@ -32,7 +32,10 @@ export const createUser = asyncWrapper(
     /* TODO 1.5: Ensure User Registration Functions Properly (8%) */
     /* Create new user using `UserModel` */
     /* Return 201 with new user */
-    throw new Error('`createUser` Not Implemented');
+
+    // throw new Error('`createUser` Not Implemented');
+
+    
     /* End of TODO 1.5 */
   },
 );
