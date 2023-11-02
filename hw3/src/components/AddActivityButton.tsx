@@ -19,7 +19,7 @@ export default function AddActivityButton({ text, active }: HeaderButtonProps) {
   
   const username = searchParams.get("username");
   const handle = searchParams.get("handle");
-  const openModal = searchParams.get("modal");
+  //const openModal = searchParams.get("modal");
 
 
   const handleOnclick = () => {

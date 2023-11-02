@@ -2,7 +2,6 @@
 
 import { useRef } from "react";
 
-import GrowingTextarea from "@/components/GrowingTextarea";
 import UserAvatar from "@/components/UserAvatar";
 import useTweet from "@/hooks/useTweet";
 import useUserInfo from "@/hooks/useUserInfo";
@@ -15,7 +14,7 @@ type ReplyInputProps = {
 
 export default function ReplyInput({
   replyToTweetId,
-  replyToHandle,
+  //replyToHandle,
 }: ReplyInputProps) {
   const { handle } = useUserInfo();
   const textareaRef = useRef<HTMLTextAreaElement>(null);
@@ -25,6 +24,10 @@ export default function ReplyInput({
     const content = textareaRef.current?.value;
     if (!content) return;
     if (!handle) return;
+    if (content.length > 200){
+      alert("Your comment is too long!");
+      return;
+    }
 
     try {
       await postTweet({

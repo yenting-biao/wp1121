@@ -1,12 +1,10 @@
-import Link from "next/link";
+//import Link from "next/link";
 
 import dayjs from "dayjs";
-import { MessageCircle, Repeat2, Share } from "lucide-react";
 
 import { Separator } from "@/components/ui/separator";
 import { getAvatar } from "@/lib/utils";
 
-import LikeButton from "./LikeButton";
 
 type TweetProps = {
   username?: string;
@@ -23,15 +21,15 @@ type TweetProps = {
 // note that the Tweet component is also a server component
 // all client side things are abstracted away in other components
 export default function ReplyTweet({
-  username,
-  handle,
-  id,
+  //username,
+  //handle,
+  //id,
   authorName,
   authorHandle,
   content,
-  likes,
+  //likes,
   createdAt,
-  liked,
+  //liked,
 }: TweetProps) {
   return (
     <>

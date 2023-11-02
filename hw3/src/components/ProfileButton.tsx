@@ -2,8 +2,6 @@
 
 import { useRouter } from "next/navigation";
 
-import { MoreHorizontal } from "lucide-react";
-
 import UserAvatar from "@/components/UserAvatar";
 import useUserInfo from "@/hooks/useUserInfo";
 

@@ -6,7 +6,7 @@ import { db } from "@/db";
 import { tweetsTable, likesTable } from "@/db/schema";
 
 import { sql } from "drizzle-orm";
-import { start } from "repl";
+//import { start } from "repl";
 
 
 // zod is a library that helps us validate data at runtime
@@ -130,5 +130,4 @@ export async function POST(request: NextRequest) {
       { status: 500 },
     );
   }
-
 }

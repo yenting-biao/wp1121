@@ -2,12 +2,12 @@ import { eq, desc, isNull, sql, and, like } from "drizzle-orm";
 
 import NameDialog from "@/components/NameDialog";
 import Tweet from "@/components/Tweet";
-import TweetInput from "@/components/TweetInput";
+//import TweetInput from "@/components/TweetInput";
 import { Separator } from "@/components/ui/separator";
 import { db } from "@/db";
 import { likesTable, tweetsTable, usersTable } from "@/db/schema";
 import AddActivityModal from "@/components/AddActivityModal";
-import { useEffect } from "react";
+//import { useEffect } from "react";
 import Header from "@/components/Header";
 
 type HomePageProps = {
@@ -142,7 +142,7 @@ export default async function Home({
     .execute();
 
   return (
-    <div className="mx-auto flex flex-col max-w-full">
+    <div className="flex flex-col w-full">
       <Header />
       <div className="flex h-screen w-full flex-col pt-2 mt-24">
         <div className="flex">

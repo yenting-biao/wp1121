@@ -2,13 +2,9 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 
 import dayjs from "dayjs";
-import { eq, desc, sql, and, asc } from "drizzle-orm";
+import { eq,  sql, and, asc } from "drizzle-orm";
 import {
   ArrowLeft,
-  MessageCircle,
-  MoreHorizontal,
-  Repeat2,
-  Share,
 } from "lucide-react";
 
 import LikeButton from "@/components/LikeButton";
@@ -16,9 +12,10 @@ import ReplyInput from "@/components/ReplyInput";
 import ReplyTweet from "@/components/ReplyTweet";
 import { Separator } from "@/components/ui/separator";
 import { db } from "@/db";
-import { likesTable, tweetsTable, usersTable } from "@/db/schema";
+import { likesTable, tweetsTable, usersTable, selectActivityTimeTable } from "@/db/schema";
 import { getAvatar } from "@/lib/utils";
 import TweetHeader from "@/components/TweetHeader";
+import WhenToMeet from "@/components/WhenToMeet";
 
 type TweetPageProps = {
   params: {
@@ -142,6 +139,62 @@ export default async function TweetPage({
     liked: Boolean(liked),
   };
 
+  const selectedTimes = await db
+    .select({
+      selectedTimes: selectActivityTimeTable.selectTime,
+    })
+    .from(selectActivityTimeTable)
+    .where(and(
+      eq(selectActivityTimeTable.userHandle, handle!),
+      eq(selectActivityTimeTable.tweetId, tweet.id)))
+    .execute();
+  
+  //console.log("selectedTimes", selectedTimes);
+
+  const selectedTimeStrings = selectedTimes.map((item) => item.selectedTimes);
+
+  console.log("current user: ", selectedTimeStrings);
+
+  /* 
+    select likesTable.userHandle, selectActivityTimeTable.selectTime
+    from selectActivityTimeTable
+      right join likesTable on likesTable.userHandle = selectActivityTimeTable.userHandle and likesTable.tweetId = selectActivityTimeTable.tweetId
+    where selectActivityTimeTable.tweetId = tweet.id
+  */
+  const participantsSelectedTimes = await db
+    .select({
+      userHandle: likesTable.userHandle,
+      selectedTime: selectActivityTimeTable.selectTime
+    })
+    .from(selectActivityTimeTable)
+    .rightJoin(likesTable, and(eq(likesTable.userHandle, selectActivityTimeTable.userHandle), eq(likesTable.tweetId, selectActivityTimeTable.tweetId)))
+    .where(eq(selectActivityTimeTable.tweetId, tweet.id))
+  
+  console.log(participantsSelectedTimes)
+
+  type GroupedParticipants = Record<string, { userHandle: string; selectedTime: string[] }>;
+
+  const groupedParticipants = participantsSelectedTimes.reduce<GroupedParticipants>((result, item) => {
+    const { userHandle, selectedTime } = item;
+    
+    if (!result[userHandle]) {
+      result[userHandle] = { userHandle, selectedTime: [] };
+    }
+    
+    if (Array.isArray(result[userHandle].selectedTime)) {
+      result[userHandle].selectedTime.push(selectedTime ? selectedTime : "");
+    } else {
+      result[userHandle].selectedTime = [selectedTime? selectedTime : ""];
+    }
+    
+    return result;
+  }, {});
+  
+  const groupedParticipantsTimeArray = Object.values(groupedParticipants);
+  
+  //console.log(groupedParticipantsTimeArray);
+  
+
   // The following code is almost identical to the code in src/app/page.tsx
   // read the comments there for more info.
   const likesSubquery = db.$with("likes_count").as(
@@ -251,29 +304,47 @@ export default async function TweetPage({
           </div>
           <Separator />
         </div>
-        {liked ? 
-          (
-            <ReplyInput replyToTweetId={tweet.id} replyToHandle={tweet.handle} />
-          ) : (
-            <div className="px-4 py-3">
-              Join the activity to start discussion.
-            </div>
-          )}
+        
+        <div className="flex flex-row">
+          <div className="flex-1">
+            {liked ? 
+            (
+              <ReplyInput replyToTweetId={tweet.id} replyToHandle={tweet.handle} />
+            ) : (
+              <div className="px-4 py-3">
+                Join the activity to start discussion.
+              </div>
+            )}
         <Separator />
-        {replies.map((reply) => (
-          <ReplyTweet
-            key={reply.id}
-            id={reply.id}
-            username={username}
-            handle={handle}
-            authorName={reply.username}
-            authorHandle={reply.handle}
-            content={reply.content}
-            likes={reply.likes}
-            liked={reply.liked}
-            createdAt={reply.createdAt!}
-          />
-        ))}
+            {replies.map((reply) => (
+            <ReplyTweet
+              key={reply.id}
+              id={reply.id}
+              username={username}
+              handle={handle}
+              authorName={reply.username}
+              authorHandle={reply.handle}
+              content={reply.content}
+              likes={reply.likes}
+              liked={reply.liked}
+              createdAt={reply.createdAt!}
+            />
+          ))}
+          </div>
+          <div className="flex-1">
+            <WhenToMeet 
+              startDate={tweet.startAt}
+              endDate={tweet.finishAt}
+              joined={tweet.liked}
+              joinedNum={tweet.likes}
+              initialSelected={selectedTimeStrings}
+              handle={handle}
+              tweetId={tweet.id}
+              participantsSelectedTimes={groupedParticipantsTimeArray}
+            />
+          </div>
+          
+        </div>
       </div>
     </>
   );

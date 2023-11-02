@@ -1,11 +1,12 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import type { EventHandler, MouseEvent } from "react";
 
-import { Heart, Check } from "lucide-react";
+import { Check } from "lucide-react";
 
 import useLike from "@/hooks/useLike";
+import useSelectTime from "@/hooks/useSelectTime";
 import { cn } from "@/lib/utils";
 
 type LikeButtonProps = {
@@ -24,6 +25,7 @@ export default function LikeButton({
   const [liked, setLiked] = useState(initialLiked);
   const [likesCount, setLikesCount] = useState(initialLikes);
   const { likeTweet, unlikeTweet, loading } = useLike();
+  const { unSelectActivityTime } = useSelectTime();
 
   const handleClick: EventHandler<MouseEvent> = async (e) => {
     // since the parent node of the button is a Link, when we click on the
@@ -40,6 +42,17 @@ export default function LikeButton({
       });
       setLikesCount((prev) => prev - 1);
       setLiked(false);
+
+      // remove all the selected time by the user
+      /*await deleteAllActivityTime({
+        userHandle: handle,
+        tweetId,
+      })*/
+      await unSelectActivityTime({
+        userHandle: handle,
+        tweetId,
+        selectedTime: undefined,
+      });
     } else {
       await likeTweet({
         tweetId,
@@ -49,6 +62,13 @@ export default function LikeButton({
       setLiked(true);
     }
   };
+
+  useEffect(() => {
+    setLiked(initialLiked);
+    setLikesCount(initialLikes);
+  }, [initialLiked, initialLikes]);
+
+  //console.log("tweetId:", tweetId, "liked:", liked);
 
   return (
     <div className={cn("flex items-center gap-7")}>

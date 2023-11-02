@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Noto_Sans } from "next/font/google";
 
-import Header from "@/components/Header";
+//import Header from "@/components/Header";
 import { Separator } from "@/components/ui/separator";
 
 // import global styles for tailwind to work
@@ -38,7 +38,7 @@ export default function RootLayout({
     <html lang="en">
       {/* this applies the font to the whole page */}
       <body className={noto.className}>
-        <div className="mx-auto flex flex-col max-w-full">
+        <div className="w-full flex flex-col">
           {/*<Header />*/}
           <main className="flex justify-center min-h-screen max-w-full px-5">
             <Separator orientation="vertical" />

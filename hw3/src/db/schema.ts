@@ -113,3 +113,17 @@ export const replyTable = pgTable(
     userHandleIndex: index("user_handle_index").on(table.userHandle),
   }),
 );
+
+export const selectActivityTimeTable = pgTable(
+  "selectActivityTime",
+  {
+    id: serial("id").primaryKey(),
+    userHandle: varchar("user_handle", { length: 50 })
+      .notNull()
+      .references(() => usersTable.handle, { onDelete: "cascade" }),
+    tweetId: integer("tweet_id")
+      .notNull()
+      .references(() => tweetsTable.id, { onDelete: "cascade" }),
+    selectTime: varchar("select_time", {length: 50}).notNull(),
+  }
+);

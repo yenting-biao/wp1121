@@ -1,21 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
-
-import {
-  Bell,
-  Bookmark,
-  FileText,
-  Home,
-  Mail,
-  MoreHorizontal,
-  Search,
-  User,
-  Users,
-  PlusCircle
-} from "lucide-react";
-
-import larry from "@/assets/larry.png";
-import { cn } from "@/lib/utils";
+//import Link from "next/link";
 
 import ProfileButton from "./ProfileButton";
 import AddActivityButton from "./AddActivityButton";
@@ -26,7 +10,7 @@ export default function Header() {
     // aside is a semantic html tag for side content
     <header className="flex flex-col fixed w-full justify-between px-1 py-1 bg-gray-100 rounded-lg left-0">
       <div className="flex flex-row items-center gap-2">
-        <img src="/github.svg" className="ml-2"/>
+        <Image src="/github.svg" className="ml-2" alt="icon" width={40} height={40}/>
         <div className="pr-2 ">
           {/*<Link href="/">*/}
             {/*<Image src={larry} alt="Larry the bird" width={40} height={40} />*/}
@@ -44,7 +28,7 @@ export default function Header() {
   );
 }
 
-type HeaderButtonProps = {
+/*type HeaderButtonProps = {
   // allow size, and strokeWidth to be string to match lucide-react's size prop
   // this is basically a interface so that we can pass in custom component if we need to
   Icon: React.ComponentType<{
@@ -83,4 +67,4 @@ function HeaderButton({ Icon, text, active }: HeaderButtonProps) {
       </div>
     </button>
   );
-}
+}*/

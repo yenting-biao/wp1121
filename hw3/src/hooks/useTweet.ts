@@ -16,8 +16,8 @@ export default function useTweet() {
     handle: string;
     content: string;
     replyToTweetId?: number;
-    startAt?: Date | String;
-    finishAt?: Date | String;
+    startAt?: Date | string;
+    finishAt?: Date | string;
   }) => {
     setLoading(true);
 

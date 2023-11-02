@@ -2,7 +2,7 @@
 
 import TweetInput from "./TweetInput"
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 import { usePathname, useRouter } from "next/navigation";
 import { useSearchParams } from "next/navigation";
@@ -10,26 +10,26 @@ import { useSearchParams } from "next/navigation";
 // all components is src/components/ui are lifted from shadcn/ui
 // this is a good set of components built on top of tailwindcss
 // see how to use it here: https://ui.shadcn.com/
-import { Button } from "@/components/ui/button";
+//import { Button } from "@/components/ui/button";
 import {
   Dialog,
   DialogContent,
   DialogDescription,
-  DialogFooter,
+  //DialogFooter,
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { cn, validateHandle, validateUsername } from "@/lib/utils";
+//import { Input } from "@/components/ui/input";
+//import { Label } from "@/components/ui/label";
+import { validateHandle, validateUsername } from "@/lib/utils";
 
 export default function AddActivityModal() {
   const [dialogOpen, setDialogOpen] = useState(false);
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
-  const usernameInputRef = useRef<HTMLInputElement>(null);
-  const handleInputRef = useRef<HTMLInputElement>(null);
+  //const usernameInputRef = useRef<HTMLInputElement>(null);
+  //const handleInputRef = useRef<HTMLInputElement>(null);
   //const [usernameError, setUsernameError] = useState(false);
   //const [handleError, setHandleError] = useState(false);
 
@@ -39,7 +39,7 @@ export default function AddActivityModal() {
   let keywordparam = searchParams.get("keyword");
   if(!keywordparam) keywordparam = "";
   console.log(keywordparam);
-  const openModalparam = searchParams.get("modal");
+  //const openModalparam = searchParams.get("modal");
 
 
   useEffect(() => {

@@ -2,9 +2,8 @@
 
 import { useRef } from "react";
 
-import { useRouter, useSearchParams, usePathname } from "next/navigation";
+import { useRouter, useSearchParams} from "next/navigation";
 
-import { ChevronDown } from "lucide-react";
 
 //import GrowingTextarea from "@/components/GrowingTextarea";
 import UserAvatar from "@/components/UserAvatar";
@@ -12,13 +11,13 @@ import { Separator } from "@/components/ui/separator";
 import useTweet from "@/hooks/useTweet";
 import useUserInfo from "@/hooks/useUserInfo";
 import { cn } from "@/lib/utils";
-import { start } from "repl";
+//import { start } from "repl";
 
 function testDate(year: number, month: number, day: number): boolean{
   console.log("Date: " + year + " " + month + " " + day);
   if(year < 1000 || year > 3000 || month == 0 || month > 12) return false;
   
-  let monthLength = [ 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 ];
+  const monthLength = [ 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 ];
   if(year % 400 == 0 || (year % 100 != 0 && year % 4 == 0))
     monthLength[1] = 29;
 
@@ -60,7 +59,7 @@ export default function TweetInput() {
 
   const router = useRouter();
   const searchParams = useSearchParams();
-  const pathname = usePathname();
+  //const pathname = usePathname();
   
   const usernameparam = searchParams.get("username");
   const handleparam = searchParams.get("handle");
@@ -75,7 +74,10 @@ export default function TweetInput() {
       alert("Please fill in all the fields!");
       return;
     } 
-    if (!content) return;
+    if (content.length > 200){
+      alert("The activity title is too long!");
+      return;
+    }
 
     if(!isDateValid(startDate, endDate)){
       alert("Please make sure the date and time format is correct (YYYY-MM-DD HH) and exists (You cannot enter a year that is too faraway from now).");

@@ -5,7 +5,7 @@ import {
 } from "lucide-react";
 
 import { cn } from "@/lib/utils";
-import { useState, useRef, useEffect } from "react";
+import { useRef, useEffect } from "react";
 import { Input } from "./ui/input";
 
 
@@ -19,18 +19,17 @@ type searchBarProps = {
 export default function SearchBar({className}: searchBarProps){
   const searchInputRef = useRef<HTMLInputElement>(null);
 
-  //const { searchTweets, loading } = useTweet();
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
   const usernameparam = searchParams.get("username");
   const handleparam = searchParams.get("handle");
-  const keywordparam = searchParams.get("keyword");
+  //const keywordparam = searchParams.get("keyword");
 
   useEffect(() => {
-    const username = searchParams.get("username");
-    const handle = searchParams.get("handle");
+    //const username = searchParams.get("username");
+    //const handle = searchParams.get("handle");
     const keyword = searchParams.get("keyword");
     searchInputRef.current!.value = keyword ? keyword : "";
   }, [searchParams]);
