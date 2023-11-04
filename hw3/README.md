@@ -8,13 +8,14 @@
 yarn install
 ```
 
-3. Create a `.env.local` file in the root of the project and add a valid Postgres URL. To get a Postgres URL, follow the instructions [here](https://ric2k1.notion.site/Free-postgresql-tutorial-f99605d5c5104acc99b9edf9ab649199?pvs=4). (Or you can use other way to set up the database.)
+2. Create a `.env.local` file in the root of the project and add a valid Postgres URL. To get a Postgres URL, follow the instructions [here](https://ric2k1.notion.site/Free-postgresql-tutorial-f99605d5c5104acc99b9edf9ab649199?pvs=4). (Or you can use other way to set up the database.)
+Please note that the database name is "countMeIn".
 
 ```bash
-POSTGRES_URL="postgres://postgres:postgres@localhost:5432/twitter"
+POSTGRES_URL="postgres://postgres:postgres@localhost:5432/countMeIn"
 ```
 
-4. Run the migrations
+3. Run the migrations
 
 ```bash
 yarn migrate
