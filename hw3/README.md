@@ -8,8 +8,8 @@
 yarn install
 ```
 
-2. Create a `.env.local` file in the root of the project and add a valid Postgres URL. To get a Postgres URL, follow the instructions [here](https://ric2k1.notion.site/Free-postgresql-tutorial-f99605d5c5104acc99b9edf9ab649199?pvs=4). (Or you can use other way to set up the database.)
-Please note that the database name is "countMeIn".
+2. Create a `.env.local` file in the root of the project and add a valid Postgres URL. To get a Postgres URL, follow the instructions [here](https://ric2k1.notion.site/Free-postgresql-tutorial-f99605d5c5104acc99b9edf9ab649199?pvs=4). (Or you can use other way to set up the database. Just to make sure that you set up the database correctly.)
+   Please note that the database name is "countMeIn".
 
 ```bash
 POSTGRES_URL="postgres://postgres:postgres@localhost:5432/countMeIn"
@@ -25,26 +25,6 @@ yarn migrate
 
 ```bash
 yarn dev
-```
-
-## Managing the database
-
-`drizzle-kit` provides some useful commands to manage the database.
-
-### Update database schema
-
-Note that if your schema changes, some data might be deleted in the process. `drizzle-kit` would prompt you about destructive changes.
-
-```bash
-yarn drizzle-kit push:pg
-```
-
-### View or edit data
-
-This command launches a web UI to view or edit data in the database.
-
-```bash
-yarn drizzle-kit studio
 ```
 
 ## Explanation

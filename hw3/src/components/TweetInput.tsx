@@ -43,7 +43,7 @@ function isDateDiffValid(startDate: string, endDate: string): boolean {
   const date2 = new Date(endDate);
 
   const timeDifference = date2.valueOf() - date1.valueOf();
-  if(timeDifference < 0){
+  if(timeDifference <= 0){
     return false;
   }
 
