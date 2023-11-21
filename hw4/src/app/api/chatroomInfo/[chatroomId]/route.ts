@@ -47,7 +47,7 @@ export async function PUT(
 
     // Parse the request body
     const reqBody = await req.json();
-    console.log("reqBody:", reqBody);
+    //console.log("reqBody:", reqBody);
     let validatedReqBody: ChatroomPinMessage;
     try {
       validatedReqBody = pinMessageSchema.parse(reqBody);
@@ -56,8 +56,8 @@ export async function PUT(
       return NextResponse.json({ error: "Bad Request" }, { status: 400 });
     }
 
-    console.log("before chatroom in pin message");
-    console.log("validateReqBody: ", validatedReqBody);
+    //("before chatroom in pin message");
+    //console.log("validateReqBody: ", validatedReqBody);
 
     // Pin message
     const [newChatroomInfo] = await db
@@ -75,7 +75,7 @@ export async function PUT(
       .from(messagesTable)
       .where(eq(messagesTable.id, validatedReqBody.pinnedMessageId));
 
-    console.log("after req in pin message");
+    //console.log("after req in pin message");
 
     // Trigger pusher event
     const pusher = new Pusher({
@@ -150,7 +150,7 @@ export async function DELETE(
 
     // Parse the request body
     const reqBody = await req.json();
-    console.log("reqBody:", reqBody);
+    //console.log("reqBody:", reqBody);
     let validatedReqBody: DeleteChatroom;
     try {
       validatedReqBody = deleteChatroomSchema.parse(reqBody);

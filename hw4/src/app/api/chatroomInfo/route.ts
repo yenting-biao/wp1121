@@ -24,7 +24,7 @@ export async function POST(req: NextRequest) {
 
     // Parse the request body
     const reqBody = await req.json();
-    console.log("reqBody:", reqBody);
+    //console.log("reqBody:", reqBody);
     let validatedReqBody: newChatroom;
     try {
       validatedReqBody = newChatroomSchema.parse(reqBody);
@@ -33,7 +33,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Bad Request" }, { status: 400 });
     }
 
-    console.log("validateReqBody in add chatroom: ", validatedReqBody);
+    //console.log("validateReqBody in add chatroom: ", validatedReqBody);
 
     const [findUser2] = await db
       .select({
@@ -42,7 +42,7 @@ export async function POST(req: NextRequest) {
       .from(usersTable)
       .where(eq(usersTable.username, validatedReqBody.user2name));
 
-    console.log("findUser2: ", findUser2);
+    //console.log("findUser2: ", findUser2);
 
     if (!findUser2) {
       console.log("user2 not found");

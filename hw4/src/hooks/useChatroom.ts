@@ -25,7 +25,7 @@ export const useChatroom = () => {
 
   const { data: session } = useSession();
   const username = session?.user?.username;
-  console.log(username);
+  //console.log(username);
 
   /*useEffect(() => {
       const res = await fetch (`/api/chatrooms/${chatroomId}`, {

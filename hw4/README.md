@@ -38,9 +38,7 @@
    ```
 8. Open http://localhost:3000 in your browser
 
-# Setup Guide
-
-## Prettier and ESLint
+# ESLint
 
 Run the following commands in the hw4 directory.
 
@@ -53,4 +51,6 @@ yarn lint
 * The two perfect requests I implemented are:
   **傳送連結** ：自動辨識訊息中文字是否為連結。若是連結，則可以透過該連結開啟新視窗。
   **自動滾動** ：當出現新訊息時，聊天紀錄需自動滾動至最下方。
-* 若使用者 A 跟 B 有一個聊天室，而使用者 A 刪除與 B 的聊天室時，使用者 B 需要重新整理瀏覽器（建議是先到 /chatrooms 的 path 後再重新整理）才能發現聊天室被刪除。（spec 沒有寫刪除跟新增聊天室要推播所以不要因此扣我分QQ，這作業真的好難）
+* Please make sure your Internet is ok. Pusher may have some problems if your Internet is not stable. (點一個按鈕或送出訊息後可能要等比較久，這點請見諒qq)
+* To delete a chatroom, click the more info icon on the chatroom page and it will show a dialog.
+* Although the spec says "進入本頁時，預設開啟最新的聊天室以及聊天紀錄," I think that it is better to leave the user to click the chatroom they want to enter (When I open Messenger in my iPad, it does not show the newest chatroom but an empty page instead. I think it is better for the user's chatroom history.) so I did not implement like this.

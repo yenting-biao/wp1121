@@ -75,6 +75,7 @@ export default function ChatMessages({
 
   const [messages, setMessages] = useState(initialMessages);
   const [pinnedMessage, setPinnedMessage] = useState(initialPinnedMessage);
+  
 
   console.log(chattername);
 
@@ -82,6 +83,8 @@ export default function ChatMessages({
     messagesEndRef.current?.scrollIntoView({ behavior: "auto" });
     const channelName = `private-${chatroomId}`;
     const channel = pusherClient.subscribe(channelName);
+    
+    
 
     channel.bind(
       "chatroom:newMessage",
@@ -89,12 +92,12 @@ export default function ChatMessages({
         //if(senderUsername === username){
         //  return;
         //}
-
         console.log("new: ", senderUsername, message);
         //console.log("old:", messages);
         // message is the new message received
         setMessages((prevMessages) => [...prevMessages, message]);
         messagesEndRef.current?.scrollIntoView();
+
         router.refresh();
       },
     );
@@ -113,10 +116,10 @@ export default function ChatMessages({
           // If found, update its validity
           if (foundMessage) {
             foundMessage.validity = message.validity;
-            console.log("found!");
+            //console.log("found!");
           } else {
-            console.log("not found!");
-            console.log("desireID = ", message.id);
+            //console.log("not found!");
+            //console.log("desireID = ", message.id);
           }
 
           // Return the updated messages array
@@ -137,6 +140,7 @@ export default function ChatMessages({
 
     //console.log("received?", messages);
     return () => {
+      channel.unbind_all(); //TODO: new
       pusherClient.unsubscribe(channelName);
     };
   }, [chatroomId, router, messages]);

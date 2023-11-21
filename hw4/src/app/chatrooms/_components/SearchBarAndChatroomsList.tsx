@@ -2,7 +2,7 @@
 
 import {
   useState,
-  /*useEffect*/
+  useEffect
 } from "react";
 
 import Link from "next/link";
@@ -11,8 +11,8 @@ import { Input } from "@/components/ui/input";
 
 import ChatPreview from "./ChatPreview";
 
-//import { pusherClient } from "@/lib/pusher/client";
-//import { useRouter } from "next/navigation";
+import { pusherClient } from "@/lib/pusher/client";
+import { useRouter } from "next/navigation";
 
 type Props = {
   username: string;
@@ -26,7 +26,7 @@ type Props = {
   }[];
 };
 
-/*type PusherPayloadDeleteChat = {
+type PusherPayloadDeleteChat = {
   senderUsername: string;
   message:{
     chatroomID: string;
@@ -40,18 +40,29 @@ type PusherPayloadNewChat = {
     user1name: string;
     user2name: string;
   }
-}*/
+}
+
+type PusherPayloadNewMessage = {
+  senderUsername: string;
+  message: {
+    id: number | string;
+    chatroomID: string;
+    sender: string;
+    message: string;
+    validity: string;
+  },
+}
 
 export default function SearchBarAndChatroomsList({
   username,
   initialChatrooms,
 }: Props) {
   const [keyword, setKeyword] = useState("");
-  //const [chatrooms, setChatrooms] = useState(initialChatrooms);
-  //const router = useRouter();
-  const chatrooms = initialChatrooms;
+  const [chatrooms, setChatrooms] = useState(initialChatrooms);
+  const router = useRouter();
+  //const chatrooms = initialChatrooms;
 
-  /*useEffect(() => {
+  useEffect(() => {
     const channelName = `private-${username}`;
     const channel = pusherClient.subscribe(channelName);
     
@@ -61,13 +72,13 @@ export default function SearchBarAndChatroomsList({
       //}
 
       console.log("DELETE: ", senderUsername, message.chatroomID);
-      console.log("Old: ", chatrooms);
+      //console.log("Old: ", chatrooms);
       // console.log("old:", messages);
 
       // delete chatrooms.chatroomID = message.chatroomId
       setChatrooms(chatrooms.filter((chatroom) => chatroom.chatroomID != message.chatroomID));
 
-      console.log("After", chatrooms);
+      //console.log("After", chatrooms);
       
       //router.refresh();
       router.push("/chatrooms/");
@@ -89,11 +100,27 @@ export default function SearchBarAndChatroomsList({
       router.refresh();
     });
 
+    channel.bind("chatroom:newMessage", ({ senderUsername, message }: PusherPayloadNewMessage) => {
+      console.log("newMessage [navbar]: ", senderUsername, message);
+
+      // update the chatroom's last message
+      setChatrooms(prevChatrooms => {
+        const newChatrooms = [...prevChatrooms];
+        const chatroomIndex = newChatrooms.findIndex((chatroom) => chatroom.chatroomID === message.chatroomID);
+        if(chatroomIndex === -1){
+          return newChatrooms;
+        }
+        newChatrooms[chatroomIndex].message = message.message;
+        newChatrooms[chatroomIndex].messageID = message.id;
+        return newChatrooms;
+      });
+    });
+
     //console.log("received?", messages);
     return () => {
       pusherClient.unsubscribe(channelName);
     }
-  }, [router, username, chatrooms]);*/
+  }, [router, username, chatrooms]);
 
   return (
     <>

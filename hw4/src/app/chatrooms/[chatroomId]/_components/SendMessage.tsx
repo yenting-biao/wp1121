@@ -28,9 +28,9 @@ export default function SendMessage({ username, chatroomId }: Props) {
     const messageSend = messageValue;
     if (!messageSend) return;
     if (typeof messageSend !== "string") return;
-    console.log("messageSend:", messageSend);
+    //console.log("messageSend:", messageSend);
+    
     setIsLoading(true);
-
     const res = await fetch(`/api/chatrooms/${chatroomId}`, {
       method: "POST",
       headers: {
@@ -42,16 +42,18 @@ export default function SendMessage({ username, chatroomId }: Props) {
         message: messageSend,
       }),
     });
+    setIsLoading(false);
 
     if (!res.ok) {
       console.log(res);
-      setIsLoading(false);
+      alert("Something went wrong, please try again later.");
+      //setIsLoading(false);
       return;
     }
 
     setMessageValue("");
 
-    setIsLoading(false);
+    
   };
 
   return (

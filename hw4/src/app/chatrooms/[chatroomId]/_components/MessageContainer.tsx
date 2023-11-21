@@ -56,7 +56,6 @@ export default function MessageContainer({
     event.preventDefault();
     if (!seenable) return;
     // Handle right click event here
-    console.log("Right clicked!");
     setModalOpen(true);
   };
   return (
@@ -130,7 +129,7 @@ function MessageDialog({
   const [isLoading, setIsLoading] = useState(false);
 
   const handleUnsend = async (type: string) => {
-    console.log(type);
+    //console.log(type);
     if (type !== "senderInvalid" && type !== "invalid") {
       return;
     }

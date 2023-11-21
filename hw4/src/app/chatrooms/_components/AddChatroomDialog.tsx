@@ -39,7 +39,7 @@ export default function AddChatroomDialog({ username }: Props) {
     //const chatterUsername = e.get("chattername");
     const chatterUsername = newChatter;
 
-    console.log("username: ", username, "chattername: ", chatterUsername);
+    //console.log("username: ", username, "chattername: ", chatterUsername);
 
     if (!chatterUsername) return;
     if (typeof chatterUsername !== "string") return;
@@ -56,7 +56,7 @@ export default function AddChatroomDialog({ username }: Props) {
       }),
     });
 
-    console.log("add chatroom res: ", res);
+    //console.log("add chatroom res: ", res);
 
     /*.then(res => res.json())
       .then(data => {
@@ -76,7 +76,7 @@ export default function AddChatroomDialog({ username }: Props) {
     if (res.ok) {
       const body = await res.json();
 
-      console.log("add response:", body);
+      //console.log("add response:", body);
 
       const newChatroomId = body.chatroomId;
 
@@ -92,9 +92,16 @@ export default function AddChatroomDialog({ username }: Props) {
     } else {
       //chatterUsername = oldChattername ? oldChattername : "";
       console.log("add chatroom error");
-      alert(
-        "The user you are trying to chat with does not exist, or you have already been chatting with this user.",
-      );
+      if (res.status == 404){
+        alert(
+          "The user you are trying to chat with does not exist. Please try again."
+        );
+      } else {
+        alert("You have already been chatting with this user.");
+        setIsOpen(false);
+        setNewChatter("");
+      }
+      
 
       router.push(`${publicEnv.NEXT_PUBLIC_BASE_URL}/chatrooms`);
 

@@ -92,6 +92,44 @@ export async function POST(
       },
     );
 
+    // set navbar pusher
+    const [chatroomUsers] = await db
+      .select({
+        user1name: chatroomsTable.user1name,
+        user2name: chatroomsTable.user2name,
+      })
+      .from(chatroomsTable)
+      .where(eq(chatroomsTable.displayId, params.chatroomId));
+
+    await pusher.trigger(
+      `private-${chatroomUsers.user1name}`,
+      "chatroom:newMessage",
+      {
+        senderUsername: username,
+        message: {
+          id: sentMessage.id,
+          chatroomID: sentMessage.chatroomID,
+          sender: sentMessage.sender,
+          message: sentMessage.message,
+          validity: sentMessage.validity,
+        },
+      },
+    );
+    await pusher.trigger(
+      `private-${chatroomUsers.user2name}`,
+      "chatroom:newMessage",
+      {
+        senderUsername: username,
+        message: {
+          id: sentMessage.id,
+          chatroomID: sentMessage.chatroomID,
+          sender: sentMessage.sender,
+          message: sentMessage.message,
+          validity: sentMessage.validity,
+        },
+      },
+    );
+
     return NextResponse.json(
       {
         id: sentMessage.id,
@@ -144,7 +182,7 @@ export async function PUT(
 
     // Parse the request body
     const reqBody = await req.json();
-    console.log("reqBody:", reqBody);
+    //console.log("reqBody:", reqBody);
     let validatedReqBody: MessageWithValidity;
     try {
       validatedReqBody = unsendMessageSchema.parse(reqBody);
@@ -153,7 +191,7 @@ export async function PUT(
       return NextResponse.json({ error: "Bad Request" }, { status: 400 });
     }
 
-    console.log("after req");
+    //console.log("after req");
 
     // Unsend message
     const [unsentMessage] = await db
