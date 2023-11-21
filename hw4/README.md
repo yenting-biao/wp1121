@@ -6,9 +6,9 @@
    yarn
    ```
 2. Get Pusher credentials
-   Please refer to the [Pusher Setup](#pusher-setup) section for more details.
+   Please refer to the [Pusher Setup]() section in TA's README.
 3. Get Github OAuth credentials
-   Please refer to the [NextAuth Setup](#nextauth-setup) section for more details.
+   Please refer to the [NextAuth Setup](#nextauth-setup) section in TA's README.
 4. Check `.env.example`, and copy it as `.env.local` and fill in the following content:
 
    ```text
