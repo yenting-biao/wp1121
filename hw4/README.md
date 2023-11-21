@@ -53,4 +53,4 @@ yarn lint
   **自動滾動** ：當出現新訊息時，聊天紀錄需自動滾動至最下方。
 * Please make sure your Internet is ok. Pusher may have some problems if your Internet is not stable. (點一個按鈕或送出訊息後可能要等比較久，這點請見諒qq)
 * To delete a chatroom, click the more info icon on the chatroom page and it will show a dialog.
-* Although the spec says "進入本頁時，預設開啟最新的聊天室以及聊天紀錄," I think that it is better to leave the user to click the chatroom they want to enter (When I open Messenger in my iPad, it does not show the newest chatroom but an empty page instead. I think it is better for the user's chatroom history.) so I did not implement like this.
+* Although the spec says "進入本頁時，預設開啟最新的聊天室以及聊天紀錄," I think that it is better to leave the user to click the chatroom they want to enter (When I open Messenger in my iPad, it does not show the newest chatroom but an empty page instead. Moreover, if a user has no chatrooms, it must be directed to /chatrooms) so I did not implement like this for better user experience.
