@@ -6,9 +6,9 @@
    yarn
    ```
 2. Get Pusher credentials
-   Please refer to the [Pusher Setup]() section in TA's README.
+   Please refer to the Pusher Setup section in TA's code README.
 3. Get Github OAuth credentials
-   Please refer to the [NextAuth Setup](#nextauth-setup) section in TA's README.
+   Please refer to the NextAuth Section section in TA's code README.
 4. Check `.env.example`, and copy it as `.env.local` and fill in the following content:
 
    ```text
@@ -22,6 +22,7 @@
    AUTH_GITHUB_SECRET=
    ```
 5. Start the database by docker, or you can use other method to set up the postgresql database, just make sure that your set up is correct.
+   **Note that my database name is `messenger-clone`!**
 
    ```bash
    docker compose up -d
@@ -37,6 +38,7 @@
    yarn dev
    ```
 8. Open http://localhost:3000 in your browser
+   Note that when you enter this page first time, it is likely that you have to refresh once to sign in or sign up if your action is too fast. (他 compile page 就很慢QQ)
 
 # ESLint
 
@@ -54,3 +56,4 @@ yarn lint
 * Please make sure your Internet is ok. Pusher may have some problems if your Internet is not stable. (點一個按鈕或送出訊息後可能要等比較久，這點請見諒qq)
 * To delete a chatroom, click the more info icon on the chatroom page and it will show a dialog.
 * Although the spec says "進入本頁時，預設開啟最新的聊天室以及聊天紀錄," I think that it is better to leave the user to click the chatroom they want to enter (When I open Messenger in my iPad, it does not show the newest chatroom but an empty page instead. Moreover, if a user has no chatrooms, it must be directed to /chatrooms) so I did not implement like this for better user experience.
+* I use username and password together to ensure security.

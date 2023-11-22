@@ -118,6 +118,7 @@ export default function SearchBarAndChatroomsList({
 
     //console.log("received?", messages);
     return () => {
+      pusherClient.unbind_all();
       pusherClient.unsubscribe(channelName);
     }
   }, [router, username, chatrooms]);
