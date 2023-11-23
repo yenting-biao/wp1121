@@ -30,6 +30,8 @@ export default function CreateProjectForm() {
       const newProject = await createProject(projectName, projectDescription);
 
       // TODO: 5. After creating a project, redirect to the project page
+      const newProjectId = newProject.id;
+      router.push(`/projects/${newProjectId}`);
       // hint: Why are some variables unused?
 
       // TODO: 5. end
