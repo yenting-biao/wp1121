@@ -103,7 +103,17 @@ export async function updateTaskComplete(
   });
 
   // TODO: 9. Update the task's `completed` column
-
+  await db
+    .update(tasksTable)
+    .set({
+      completed: completed,
+    })
+    .where(
+      and(
+        eq(tasksTable.displayId, taskId),
+        eq(tasksTable.projectId, projectId),
+      ),
+    );
   // TODO: 9. end
 
   revalidatePath(`/projects/${projectId}`);
@@ -121,6 +131,15 @@ export async function deleteTask(taskId: string, projectId: string) {
   });
 
   // TODO: 10. Delete the task whose displayId is `taskId`
+  await db
+    .delete(tasksTable)
+    .where(
+      and(
+        eq(tasksTable.displayId, taskId),
+        eq(tasksTable.projectId, projectId),
+      ),
+    )
+    .returning();
 
   // TODO: 10. end
 
