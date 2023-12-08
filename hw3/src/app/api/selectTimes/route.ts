@@ -132,7 +132,7 @@ export async function DELETE(request: NextRequest) {
 
   return new NextResponse("OK", { status: 200 });
 }
-
+/*
 export async function DELETE_ALL(request: NextRequest) {
   const data = await request.json();
 
@@ -164,3 +164,4 @@ export async function DELETE_ALL(request: NextRequest) {
 
   return new NextResponse("OK", { status: 200 });
 }
+*/
