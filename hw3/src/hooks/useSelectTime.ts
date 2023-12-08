@@ -76,8 +76,8 @@ export default function useSelectTime() {
     //if (loading) return;
 
     //setLoading(true);
-    const res = await fetch("/api/selectTimes", {
-      method: "DELETE_ALL",
+    const res = await fetch("/api/deleteAllselectTimes", {
+      method: "DELETE",
       body: JSON.stringify({
         userHandle,
         tweetId,        
