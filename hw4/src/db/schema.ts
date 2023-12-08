@@ -37,7 +37,7 @@ export const usersRelations = relations(usersTable, ({ many }) => ({
   chatroomsTable: many(chatroomsTable),
 }));
 
-export const chatroomsTable = pgTable(
+export const chatroomsTable: any = pgTable(
   "documents",
   {
     id: serial("id").primaryKey(),
