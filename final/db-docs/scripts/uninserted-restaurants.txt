@@ -1,0 +1,1085 @@
+Inserting ../json-data/daan-district-restaurants.json...
+../json-data/daan-district-restaurants.jsoninserted successfully.
+Inserting ../json-data/zhongzheng-district-restaurants.json...
+Violating placeId: ChIJPVVVVSmqQjQRE_DCJyEaJoQ
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJPVVVVSmqQjQRE_DCJyEaJoQ) already exists.
+
+Violating placeId: ChIJf-iLZ4mpQjQRC7E9ab8LIDU
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJf-iLZ4mpQjQRC7E9ab8LIDU) already exists.
+
+Violating placeId: ChIJj3pGQNWrQjQReTOhi1R4YdQ
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJj3pGQNWrQjQReTOhi1R4YdQ) already exists.
+
+Violating placeId: ChIJzUBaDi6qQjQR1XCVhL1b-3g
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJzUBaDi6qQjQR1XCVhL1b-3g) already exists.
+
+Violating placeId: ChIJp4dzrieqQjQRL9y15nZac5k
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJp4dzrieqQjQRL9y15nZac5k) already exists.
+
+Violating placeId: ChIJJx8z59OrQjQRKBWqFf6dG8I
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJJx8z59OrQjQRKBWqFf6dG8I) already exists.
+
+Violating placeId: ChIJuWw81C6qQjQRD7lOTyFReqs
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJuWw81C6qQjQRD7lOTyFReqs) already exists.
+
+Violating placeId: ChIJG85B7S2qQjQRFzLBWWEa6PI
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJG85B7S2qQjQRFzLBWWEa6PI) already exists.
+
+Violating placeId: ChIJDZpRFYKpQjQRcPWp0SKgYIQ
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJDZpRFYKpQjQRcPWp0SKgYIQ) already exists.
+
+Violating placeId: ChIJaUYcX82rQjQRSvwF_TroImQ
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJaUYcX82rQjQRSvwF_TroImQ) already exists.
+
+Violating placeId: ChIJf2dK2ByrQjQRfHOeIaZhkgs
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJf2dK2ByrQjQRfHOeIaZhkgs) already exists.
+
+Violating placeId: ChIJt2exNxurQjQROcDnwKLeXA4
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJt2exNxurQjQROcDnwKLeXA4) already exists.
+
+Violating placeId: ChIJtxAbUsSrQjQRnqXBc75y9kE
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJtxAbUsSrQjQRnqXBc75y9kE) already exists.
+
+Violating placeId: ChIJU-9CKo2rQjQR88t0sKjsuh8
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJU-9CKo2rQjQR88t0sKjsuh8) already exists.
+
+Violating placeId: ChIJVVVVVRWsQjQRsTj03InQVns
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJVVVVVRWsQjQRsTj03InQVns) already exists.
+
+Violating placeId: ChIJB5Ima4mpQjQRB3RV3z1H820
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJB5Ima4mpQjQRB3RV3z1H820) already exists.
+
+Violating placeId: ChIJc8hLzo-pQjQRK1y6ymcggWk
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJc8hLzo-pQjQRK1y6ymcggWk) already exists.
+
+Violating placeId: ChIJm4r2zYupQjQRldQ-jLPXeIA
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJm4r2zYupQjQRldQ-jLPXeIA) already exists.
+
+Violating placeId: ChIJYbE3TImpQjQRwm5Ok39Ck9M
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJYbE3TImpQjQRwm5Ok39Ck9M) already exists.
+
+Violating placeId: ChIJeSyGOtqrQjQR7sQWZL6Nea0
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJeSyGOtqrQjQR7sQWZL6Nea0) already exists.
+
+Violating placeId: ChIJyy4_ncarQjQRXoUqYmsV6QY
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJyy4_ncarQjQRXoUqYmsV6QY) already exists.
+
+Violating placeId: ChIJR8oqZMWrQjQR1ecGLvALNJM
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJR8oqZMWrQjQR1ecGLvALNJM) already exists.
+
+Violating placeId: ChIJ3dzOKb-rQjQR67kBqHTSWjg
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJ3dzOKb-rQjQR67kBqHTSWjg) already exists.
+
+Violating placeId: ChIJLXM2HIupQjQRFKYdetBT0rc
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJLXM2HIupQjQRFKYdetBT0rc) already exists.
+
+Violating placeId: ChIJFzzD4oqpQjQRQhKQwn4ydLM
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJFzzD4oqpQjQRQhKQwn4ydLM) already exists.
+
+Violating placeId: ChIJ_68w9Y-pQjQRa2AIDqFvRmc
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJ_68w9Y-pQjQRa2AIDqFvRmc) already exists.
+
+Violating placeId: ChIJSVOJyLipQjQRT_OG-Tg1QRg
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJSVOJyLipQjQRT_OG-Tg1QRg) already exists.
+
+Violating placeId: ChIJffQZ6YipQjQRAdV3sCg2bcM
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJffQZ6YipQjQRAdV3sCg2bcM) already exists.
+
+Violating placeId: ChIJ28rhwYqpQjQRXjs_i80FXzw
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJ28rhwYqpQjQRXjs_i80FXzw) already exists.
+
+Violating placeId: ChIJj0c_Z7upQjQR4wdGv7ZMrYQ
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJj0c_Z7upQjQR4wdGv7ZMrYQ) already exists.
+
+Violating placeId: ChIJzzXuMcSrQjQRG5ig5eeROuQ
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJzzXuMcSrQjQRG5ig5eeROuQ) already exists.
+
+Violating placeId: ChIJk9O6fY-pQjQRou8MUthzcgU
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJk9O6fY-pQjQRou8MUthzcgU) already exists.
+
+Violating placeId: ChIJM87qooqpQjQRf0clMVZqC0Q
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJM87qooqpQjQRf0clMVZqC0Q) already exists.
+
+Violating placeId: ChIJmS2nuIqpQjQRUaGdkvl8WPg
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJmS2nuIqpQjQRUaGdkvl8WPg) already exists.
+
+Violating placeId: ChIJuytF74upQjQR_-GkfGCTKM4
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJuytF74upQjQR_-GkfGCTKM4) already exists.
+
+Violating placeId: ChIJkVXT3YqpQjQRhLHnZ8tqRXM
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJkVXT3YqpQjQRhLHnZ8tqRXM) already exists.
+
+Violating placeId: ChIJcWUPVompQjQRuzEtjc4QoOs
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJcWUPVompQjQRuzEtjc4QoOs) already exists.
+
+Violating placeId: ChIJS6WqDoupQjQRYCUPl3_lVFc
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJS6WqDoupQjQRYCUPl3_lVFc) already exists.
+
+Violating placeId: ChIJuyk2l4qpQjQRILRCQId5ZZA
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJuyk2l4qpQjQRILRCQId5ZZA) already exists.
+
+Violating placeId: ChIJq6qqqoupQjQR_af3rdJV4JA
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJq6qqqoupQjQR_af3rdJV4JA) already exists.
+
+Violating placeId: ChIJoRPjyYqpQjQRLileViO9FZw
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJoRPjyYqpQjQRLileViO9FZw) already exists.
+
+Violating placeId: ChIJZb55kW6rQjQR3vVUh5vYQ9w
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJZb55kW6rQjQR3vVUh5vYQ9w) already exists.
+
+Violating placeId: ChIJ0YnMT9qrQjQRkB7Le9GP8rU
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJ0YnMT9qrQjQRkB7Le9GP8rU) already exists.
+
+Violating placeId: ChIJJZUgxIqpQjQRNgt_MjaUBB0
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJJZUgxIqpQjQRNgt_MjaUBB0) already exists.
+
+Violating placeId: ChIJZ7gnvYupQjQRBqsgVa3WC5Y
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJZ7gnvYupQjQRBqsgVa3WC5Y) already exists.
+
+Violating placeId: ChIJPSsG8IupQjQR6O6iXekaFRM
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJPSsG8IupQjQR6O6iXekaFRM) already exists.
+
+Violating placeId: ChIJ12ZbGeypQjQRSYEx1ae3Uts
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJ12ZbGeypQjQRSYEx1ae3Uts) already exists.
+
+Violating placeId: ChIJM2lunIupQjQRPnsG72wz21w
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJM2lunIupQjQRPnsG72wz21w) already exists.
+
+Violating placeId: ChIJDzOZn4upQjQRj3uewI9Rsks
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJDzOZn4upQjQRj3uewI9Rsks) already exists.
+
+Violating placeId: ChIJJ07sEIupQjQRkXeWp79RI0s
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJJ07sEIupQjQRkXeWp79RI0s) already exists.
+
+Violating placeId: ChIJazSMmIupQjQRKRMV5kOmHi4
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJazSMmIupQjQRKRMV5kOmHi4) already exists.
+
+Violating placeId: ChIJUdVFqY2pQjQRiyO4K0VPsJc
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJUdVFqY2pQjQRiyO4K0VPsJc) already exists.
+
+Violating placeId: ChIJ8Rj6E8arQjQRLJpWwZcs6GA
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJ8Rj6E8arQjQRLJpWwZcs6GA) already exists.
+
+Violating placeId: ChIJPSbdwIqpQjQRlYUb2CvQAZM
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJPSbdwIqpQjQRlYUb2CvQAZM) already exists.
+
+Violating placeId: ChIJoQttyYqpQjQRrPcR8IE0dv0
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJoQttyYqpQjQRrPcR8IE0dv0) already exists.
+
+Violating placeId: ChIJ1wIizoupQjQRsWmRigUpO38
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJ1wIizoupQjQRsWmRigUpO38) already exists.
+
+Violating placeId: ChIJfWS1j4upQjQRcetn4MZu_pw
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJfWS1j4upQjQRcetn4MZu_pw) already exists.
+
+Violating placeId: ChIJ5Zls-surQjQRqMbV9NmeCVA
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJ5Zls-surQjQRqMbV9NmeCVA) already exists.
+
+Violating placeId: ChIJWVixVfGpQjQRZeQpOv5exNk
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJWVixVfGpQjQRZeQpOv5exNk) already exists.
+
+Violating placeId: ChIJldrqooqpQjQRl4bCVhVRvuI
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJldrqooqpQjQRl4bCVhVRvuI) already exists.
+
+Violating placeId: ChIJZ_PRXDCpQjQRufM8rUIho3A
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJZ_PRXDCpQjQRufM8rUIho3A) already exists.
+
+Violating placeId: ChIJ54FYYVKpQjQR_50aNd8CZT4
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJ54FYYVKpQjQR_50aNd8CZT4) already exists.
+
+Violating placeId: ChIJGdF1HIupQjQRTff4eXGhEH4
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJGdF1HIupQjQRTff4eXGhEH4) already exists.
+
+Violating placeId: ChIJiX2rhYupQjQR2dtIyVkdFcs
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJiX2rhYupQjQR2dtIyVkdFcs) already exists.
+
+Violating placeId: ChIJzVr3l4upQjQRHTNqYkEgR40
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJzVr3l4upQjQRHTNqYkEgR40) already exists.
+
+Violating placeId: ChIJ8wtUD4upQjQRAvHhb-IbO3E
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJ8wtUD4upQjQRAvHhb-IbO3E) already exists.
+
+Violating placeId: ChIJgbwEgJypQjQR6zkPQ6rpaNI
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJgbwEgJypQjQR6zkPQ6rpaNI) already exists.
+
+Violating placeId: ChIJvfRr2NWrQjQRZSTAyJ3KtLE
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJvfRr2NWrQjQRZSTAyJ3KtLE) already exists.
+
+Violating placeId: ChIJq8cZun2pQjQRRKk6E6VbUQU
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJq8cZun2pQjQRRKk6E6VbUQU) already exists.
+
+Violating placeId: ChIJV8swk9urQjQRR9TFTpYv_ss
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJV8swk9urQjQRR9TFTpYv_ss) already exists.
+
+Violating placeId: ChIJibxETYKpQjQRqvJwtszA4AA
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJibxETYKpQjQRqvJwtszA4AA) already exists.
+
+Violating placeId: ChIJbyeahX-pQjQR_4p0ZVVdk4w
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJbyeahX-pQjQR_4p0ZVVdk4w) already exists.
+
+Violating placeId: ChIJa2WIvqipQjQRcZO3RQ-mXAw
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJa2WIvqipQjQRcZO3RQ-mXAw) already exists.
+
+Violating placeId: ChIJ8yP_QoKpQjQRg2nYx1ZNIpI
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJ8yP_QoKpQjQRg2nYx1ZNIpI) already exists.
+
+Violating placeId: ChIJO4PyDjKpQjQR-LQ46t-XGg4
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJO4PyDjKpQjQR-LQ46t-XGg4) already exists.
+
+Violating placeId: ChIJ34Z5T4KpQjQRd-83PmUKhcg
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJ34Z5T4KpQjQRd-83PmUKhcg) already exists.
+
+Violating placeId: ChIJl5bpWnypQjQRNfZRUjACOLk
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJl5bpWnypQjQRNfZRUjACOLk) already exists.
+
+Violating placeId: ChIJK5RQPYKpQjQRl9cqkvtxY0M
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJK5RQPYKpQjQRl9cqkvtxY0M) already exists.
+
+Violating placeId: ChIJsfzIwoKpQjQR36_EerquuxY
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJsfzIwoKpQjQR36_EerquuxY) already exists.
+
+Violating placeId: ChIJ8eWRPYKpQjQRuXQ3tGY9wKo
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJ8eWRPYKpQjQRuXQ3tGY9wKo) already exists.
+
+Violating placeId: ChIJgRdW94KpQjQRODiapkz_DB0
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJgRdW94KpQjQRODiapkz_DB0) already exists.
+
+Violating placeId: ChIJA47M5cWrQjQR5MwWM9SBgKU
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJA47M5cWrQjQR5MwWM9SBgKU) already exists.
+
+Violating placeId: ChIJ-0oPmM2rQjQR5fWzSB3ETgU
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJ-0oPmM2rQjQR5fWzSB3ETgU) already exists.
+
+Violating placeId: ChIJ13TOiMarQjQRGCtxcxV5rUo
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJ13TOiMarQjQRGCtxcxV5rUo) already exists.
+
+Violating placeId: ChIJG8HjuoyrQjQRvmbu3LT2wD0
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJG8HjuoyrQjQRvmbu3LT2wD0) already exists.
+
+Violating placeId: ChIJ19tM4syrQjQRYR1IxodnYmM
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJ19tM4syrQjQRYR1IxodnYmM) already exists.
+
+Violating placeId: ChIJ_9PRANKrQjQRbo33FDEvocI
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJ_9PRANKrQjQRbo33FDEvocI) already exists.
+
+Violating placeId: ChIJ7cqE49GrQjQRI5k2tcJkkBA
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJ7cqE49GrQjQRI5k2tcJkkBA) already exists.
+
+Violating placeId: ChIJHeog_cWrQjQRW8FA9nAGKIg
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJHeog_cWrQjQRW8FA9nAGKIg) already exists.
+
+Violating placeId: ChIJr-VVtX2pQjQRuNp6ud7DzOE
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJr-VVtX2pQjQRuNp6ud7DzOE) already exists.
+
+Violating placeId: ChIJq2tGicarQjQRGsVTw_6-HN8
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJq2tGicarQjQRGsVTw_6-HN8) already exists.
+
+Violating placeId: ChIJiS4o2myrQjQRhPILcYg-vtg
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJiS4o2myrQjQRhPILcYg-vtg) already exists.
+
+Violating placeId: ChIJNXx1sdurQjQRVM_OVdL5RmI
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJNXx1sdurQjQRVM_OVdL5RmI) already exists.
+
+Violating placeId: ChIJ_cJ4RtOrQjQRjIcmW5MPLzE
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJ_cJ4RtOrQjQRjIcmW5MPLzE) already exists.
+
+Violating placeId: ChIJweovLs2rQjQRxNJvMGxKxMI
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJweovLs2rQjQRxNJvMGxKxMI) already exists.
+
+Violating placeId: ChIJV_lN5tOrQjQREz8-EdNHofw
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJV_lN5tOrQjQREz8-EdNHofw) already exists.
+
+Violating placeId: ChIJOz2tjcSrQjQR6iOp20VVTDc
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJOz2tjcSrQjQR6iOp20VVTDc) already exists.
+
+Violating placeId: ChIJxTLhpyg9aTQRecXNly6631M
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJxTLhpyg9aTQRecXNly6631M) already exists.
+
+Violating placeId: ChIJH36iliirQjQRd3CYMqG7tLI
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJH36iliirQjQRd3CYMqG7tLI) already exists.
+
+Violating placeId: ChIJ6XfOP82rQjQR23E0Moak_0M
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJ6XfOP82rQjQR23E0Moak_0M) already exists.
+
+Violating placeId: ChIJmdIuJMyrQjQRsxx8cCcR4eE
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJmdIuJMyrQjQRsxx8cCcR4eE) already exists.
+
+Violating placeId: ChIJZ3ngz86rQjQROhwb6yf2vqo
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJZ3ngz86rQjQROhwb6yf2vqo) already exists.
+
+Violating placeId: ChIJs-ZyPuOrQjQRkVemaNDdgtk
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJs-ZyPuOrQjQRkVemaNDdgtk) already exists.
+
+Violating placeId: ChIJtQBR5cWrQjQRmWHmoFsy7g4
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJtQBR5cWrQjQRmWHmoFsy7g4) already exists.
+
+Violating placeId: ChIJ7YtJ8cyrQjQRiNsxNu9BYvo
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJ7YtJ8cyrQjQRiNsxNu9BYvo) already exists.
+
+Violating placeId: ChIJgWQQdtKrQjQRbFaQKi3iYJk
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJgWQQdtKrQjQRbFaQKi3iYJk) already exists.
+
+Violating placeId: ChIJ7yfd_82rQjQRFHc6dSL-vVA
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJ7yfd_82rQjQRFHc6dSL-vVA) already exists.
+
+Violating placeId: ChIJp6GC5NGrQjQRDuHabyIYADA
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJp6GC5NGrQjQRDuHabyIYADA) already exists.
+
+Violating placeId: ChIJsbZtjcSrQjQR1kcL4c-g_7g
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJsbZtjcSrQjQR1kcL4c-g_7g) already exists.
+
+Violating placeId: ChIJta69e6OrQjQRCLi_lgUTPks
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJta69e6OrQjQRCLi_lgUTPks) already exists.
+
+Violating placeId: ChIJDVzXR8arQjQRPVGjj1Hcb6s
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJDVzXR8arQjQRPVGjj1Hcb6s) already exists.
+
+Violating placeId: ChIJieofP8SrQjQRlwZLciAHtGk
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJieofP8SrQjQRlwZLciAHtGk) already exists.
+
+Violating placeId: ChIJhyEhFcWrQjQRgght_BCEXyU
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJhyEhFcWrQjQRgght_BCEXyU) already exists.
+
+Violating placeId: ChIJAWPdwc2rQjQRtfLcGgCX51o
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJAWPdwc2rQjQRtfLcGgCX51o) already exists.
+
+Violating placeId: ChIJWbnZUsWrQjQRFIOnJhWcJeI
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJWbnZUsWrQjQRFIOnJhWcJeI) already exists.
+
+Violating placeId: ChIJXRs81GmrQjQRzAhgKrD7NOo
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJXRs81GmrQjQRzAhgKrD7NOo) already exists.
+
+Violating placeId: ChIJ99gARwqrQjQR-pzvBeatnDQ
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJ99gARwqrQjQR-pzvBeatnDQ) already exists.
+
+Violating placeId: ChIJY2-nlMarQjQRS5idGUMiMHA
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJY2-nlMarQjQRS5idGUMiMHA) already exists.
+
+Violating placeId: ChIJj7aFBLmrQjQRRJs6JmGETF4
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJj7aFBLmrQjQRRJs6JmGETF4) already exists.
+
+Violating placeId: ChIJ_3WWEcyrQjQR-tvya11aBt8
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJ_3WWEcyrQjQR-tvya11aBt8) already exists.
+
+Violating placeId: ChIJaU_-FyqrQjQRbLmzDXFaj5E
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJaU_-FyqrQjQRbLmzDXFaj5E) already exists.
+
+Violating placeId: ChIJyVfsN8arQjQR-HY_0Io5JY8
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJyVfsN8arQjQR-HY_0Io5JY8) already exists.
+
+Violating placeId: ChIJHRrUks2rQjQRNsgAicoVhbM
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJHRrUks2rQjQRNsgAicoVhbM) already exists.
+
+Violating placeId: ChIJ8VNyWSqqQjQRz_rrWE4OhkI
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJ8VNyWSqqQjQRz_rrWE4OhkI) already exists.
+
+Violating placeId: ChIJT_qVvoOpQjQR0lNQZ4pe94U
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJT_qVvoOpQjQR0lNQZ4pe94U) already exists.
+
+Violating placeId: ChIJ85kYyJupQjQRfB73So3YYRk
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJ85kYyJupQjQRfB73So3YYRk) already exists.
+
+Violating placeId: ChIJdfe8pISpQjQR5vHdpiF8gfA
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJdfe8pISpQjQR5vHdpiF8gfA) already exists.
+
+Violating placeId: ChIJZ9j9LpupQjQRo_v2j2RcSlQ
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJZ9j9LpupQjQRo_v2j2RcSlQ) already exists.
+
+Violating placeId: ChIJ6SD9j1OpQjQR9PEGhor-D9c
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJ6SD9j1OpQjQR9PEGhor-D9c) already exists.
+
+Violating placeId: ChIJ4WwaaM2rQjQRG8N5XA8chEs
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJ4WwaaM2rQjQRG8N5XA8chEs) already exists.
+
+Violating placeId: ChIJH9HPKIepQjQR_QYgSbzCK7s
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJH9HPKIepQjQR_QYgSbzCK7s) already exists.
+
+Violating placeId: ChIJI-fDY4OpQjQRCTU_iaWpbeA
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJI-fDY4OpQjQRCTU_iaWpbeA) already exists.
+
+Violating placeId: ChIJbeaI68KrQjQRi8WxfBHQR_g
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJbeaI68KrQjQRi8WxfBHQR_g) already exists.
+
+Violating placeId: ChIJlz_vNM2rQjQRE6rpay_T7zk
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJlz_vNM2rQjQRE6rpay_T7zk) already exists.
+
+Violating placeId: ChIJF22p4YOpQjQRElrhuxLhds8
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJF22p4YOpQjQRElrhuxLhds8) already exists.
+
+Violating placeId: ChIJDTHfdy6qQjQRGF1ABfl6yrI
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJDTHfdy6qQjQRGF1ABfl6yrI) already exists.
+
+Violating placeId: ChIJI9rHENWrQjQRhRhmH0EiXtI
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJI9rHENWrQjQRhRhmH0EiXtI) already exists.
+
+Violating placeId: ChIJe3y0woKpQjQRGGVS0raZdCg
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJe3y0woKpQjQRGGVS0raZdCg) already exists.
+
+Violating placeId: ChIJdzzrApOrQjQRPWLJUsTVZyU
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJdzzrApOrQjQRPWLJUsTVZyU) already exists.
+
+Violating placeId: ChIJS_lMkS2qQjQRr7V5Xb4mg20
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJS_lMkS2qQjQRr7V5Xb4mg20) already exists.
+
+Violating placeId: ChIJh_Q0-SyqQjQRRWbn04maGO4
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJh_Q0-SyqQjQRRWbn04maGO4) already exists.
+
+Violating placeId: ChIJuRn4NC-qQjQRJqj4LG88wys
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJuRn4NC-qQjQRJqj4LG88wys) already exists.
+
+Violating placeId: ChIJFap94WarQjQR8xORzmAVd88
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJFap94WarQjQR8xORzmAVd88) already exists.
+
+Violating placeId: ChIJXax9ZTKqQjQRId5TggYMqss
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJXax9ZTKqQjQRId5TggYMqss) already exists.
+
+Violating placeId: ChIJk1iCfNurQjQRa09O8sJeSM4
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJk1iCfNurQjQRa09O8sJeSM4) already exists.
+
+Violating placeId: ChIJv32ZuyuqQjQRrOl9q5EzIUc
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJv32ZuyuqQjQRrOl9q5EzIUc) already exists.
+
+Violating placeId: ChIJxb5PjoapQjQRQxCdflMrDQQ
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJxb5PjoapQjQRQxCdflMrDQQ) already exists.
+
+Violating placeId: ChIJS1R-GDKqQjQR3CRlbh0u-8U
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJS1R-GDKqQjQR3CRlbh0u-8U) already exists.
+
+Violating placeId: ChIJ5UrvgM6rQjQRlynUeB9o2_Y
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJ5UrvgM6rQjQRlynUeB9o2_Y) already exists.
+
+Violating placeId: ChIJJfMujCiqQjQRzyGPjaePdDU
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJJfMujCiqQjQRzyGPjaePdDU) already exists.
+
+Violating placeId: ChIJXzHnYtKrQjQR2CAASg5xRLw
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJXzHnYtKrQjQR2CAASg5xRLw) already exists.
+
+Violating placeId: ChIJre9cvoGpQjQRA3mn9UiYa0A
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJre9cvoGpQjQRA3mn9UiYa0A) already exists.
+
+Violating placeId: ChIJaw8UxcyrQjQRqR9nHaZHQnY
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJaw8UxcyrQjQRqR9nHaZHQnY) already exists.
+
+Violating placeId: ChIJq6qqqi6qQjQRt7xWjeJaSbg
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJq6qqqi6qQjQRt7xWjeJaSbg) already exists.
+
+Violating placeId: ChIJeUp8ZTKqQjQRq0a_UxXZQbM
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJeUp8ZTKqQjQRq0a_UxXZQbM) already exists.
+
+Violating placeId: ChIJx6doxjGqQjQRQh4hqk1pHvo
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJx6doxjGqQjQRQh4hqk1pHvo) already exists.
+
+Violating placeId: ChIJ_4anyUerQjQRZUeiivesi1k
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJ_4anyUerQjQRZUeiivesi1k) already exists.
+
+Violating placeId: ChIJM7qEDRarQjQRhyVLYMgn7P0
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJM7qEDRarQjQRhyVLYMgn7P0) already exists.
+
+Violating placeId: ChIJub2sVompQjQRf8TOJJd6BaA
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJub2sVompQjQRf8TOJJd6BaA) already exists.
+
+Violating placeId: ChIJ5Zls-surQjQRtT-wtUeIkxo
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJ5Zls-surQjQRtT-wtUeIkxo) already exists.
+
+Violating placeId: ChIJw3tHETKqQjQR_s7m4QZEEBY
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJw3tHETKqQjQR_s7m4QZEEBY) already exists.
+
+Violating placeId: ChIJH6qOj8yrQjQRUfvkS2HZFH0
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJH6qOj8yrQjQRUfvkS2HZFH0) already exists.
+
+Violating placeId: ChIJgfp8ay6qQjQRcxepniNoKa8
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJgfp8ay6qQjQRcxepniNoKa8) already exists.
+
+Violating placeId: ChIJVQNOISqqQjQR25HpUboNbGs
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJVQNOISqqQjQR25HpUboNbGs) already exists.
+
+Violating placeId: ChIJW2LbX8yrQjQRD_KPVod8Nyc
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJW2LbX8yrQjQRD_KPVod8Nyc) already exists.
+
+Violating placeId: ChIJhzDBtYepQjQRt-WI3i_Oli0
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJhzDBtYepQjQRt-WI3i_Oli0) already exists.
+
+Violating placeId: ChIJ1T6mMy-qQjQR6uYQMXlW6q4
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJ1T6mMy-qQjQR6uYQMXlW6q4) already exists.
+
+Violating placeId: ChIJaxAF2XmrQjQRf4L7gZKvA7w
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJaxAF2XmrQjQRf4L7gZKvA7w) already exists.
+
+Violating placeId: ChIJq6qqqi-qQjQRoxGh8cVUmF8
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJq6qqqi-qQjQRoxGh8cVUmF8) already exists.
+
+Violating placeId: ChIJKbbHuTCqQjQRZS2T6vI1jS0
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJKbbHuTCqQjQRZS2T6vI1jS0) already exists.
+
+Violating placeId: ChIJcRrEWsjWDRQRqtl-xgdjQ1M
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJcRrEWsjWDRQRqtl-xgdjQ1M) already exists.
+
+Violating placeId: ChIJOVfdPSqqQjQRcZB32CU9ooA
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJOVfdPSqqQjQRcZB32CU9ooA) already exists.
+
+Violating placeId: ChIJvSLKuTOqQjQRa5qmkg3Vvuw
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJvSLKuTOqQjQRa5qmkg3Vvuw) already exists.
+
+Violating placeId: ChIJ0aF0Ay6qQjQR9-EY-ez2Sh4
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJ0aF0Ay6qQjQR9-EY-ez2Sh4) already exists.
+
+Violating placeId: ChIJq4CrE4mpQjQRJPnkytgaWVI
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJq4CrE4mpQjQRJPnkytgaWVI) already exists.
+
+Violating placeId: ChIJS6gFKy-qQjQRb94czFPrhgU
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJS6gFKy-qQjQRb94czFPrhgU) already exists.
+
+Violating placeId: ChIJYSZVPDKrQjQRpyCru5eT7Vs
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJYSZVPDKrQjQRpyCru5eT7Vs) already exists.
+
+Violating placeId: ChIJLamhskarQjQRJVVFCsZ2GnQ
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJLamhskarQjQRJVVFCsZ2GnQ) already exists.
+
+Violating placeId: ChIJL2HKHS6qQjQRD9M-RNPQ0UI
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJL2HKHS6qQjQRD9M-RNPQ0UI) already exists.
+
+Violating placeId: ChIJp3n9zymrQjQRbWiOjvvVEOA
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJp3n9zymrQjQRbWiOjvvVEOA) already exists.
+
+Violating placeId: ChIJbzssLs2rQjQRyazDexzOAr8
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJbzssLs2rQjQRyazDexzOAr8) already exists.
+
+Violating placeId: ChIJ-3LMjTKqQjQRCYCdUo-SlNQ
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJ-3LMjTKqQjQRCYCdUo-SlNQ) already exists.
+
+Violating placeId: ChIJYya0hSyqQjQRkEwgQt4-oC8
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJYya0hSyqQjQRkEwgQt4-oC8) already exists.
+
+Violating placeId: ChIJjStauYGpQjQR6Cqqnlq3bi4
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJjStauYGpQjQR6Cqqnlq3bi4) already exists.
+
+Violating placeId: ChIJeUp8ZTKqQjQREjxsd92csjg
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJeUp8ZTKqQjQREjxsd92csjg) already exists.
+
+Violating placeId: ChIJOWhYlsyrQjQRS0-iAS4qi2k
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJOWhYlsyrQjQRS0-iAS4qi2k) already exists.
+
+Violating placeId: ChIJU3HcKMmrQjQRwf6iiRPYT_c
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJU3HcKMmrQjQRwf6iiRPYT_c) already exists.
+
+Violating placeId: ChIJNU36A7mrQjQRPZ9JbaKtI7w
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJNU36A7mrQjQRPZ9JbaKtI7w) already exists.
+
+Violating placeId: ChIJ4yt0hyyqQjQRA905QCvA3O4
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJ4yt0hyyqQjQRA905QCvA3O4) already exists.
+
+Violating placeId: ChIJ83emQSqqQjQRW6MevTEqLzg
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJ83emQSqqQjQRW6MevTEqLzg) already exists.
+
+Violating placeId: ChIJx_wX4virQjQRX2J2swlasUo
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJx_wX4virQjQRX2J2swlasUo) already exists.
+
+Violating placeId: ChIJ5ZhRj8yrQjQRrIZ7NwlWq4w
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJ5ZhRj8yrQjQRrIZ7NwlWq4w) already exists.
+
+Violating placeId: ChIJuYGK1jKqQjQR-_rwjFwhcrE
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJuYGK1jKqQjQR-_rwjFwhcrE) already exists.
+
+Violating placeId: ChIJjc9-QsyrQjQRGxQCt3ntoHo
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJjc9-QsyrQjQRGxQCt3ntoHo) already exists.
+
+Violating placeId: ChIJ-cZ5OS-qQjQRK62dGosfoW8
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJ-cZ5OS-qQjQRK62dGosfoW8) already exists.
+
+Violating placeId: ChIJNbJ7SI6pQjQRGRP1np3P5Po
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJNbJ7SI6pQjQRGRP1np3P5Po) already exists.
+
+Violating placeId: ChIJWy5ViPmrQjQRh62Rx1LlIxk
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJWy5ViPmrQjQRh62Rx1LlIxk) already exists.
+
+Violating placeId: ChIJGZuTtC6qQjQRHzA7XdKg5yk
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJGZuTtC6qQjQRHzA7XdKg5yk) already exists.
+
+Violating placeId: ChIJLZbPPs2rQjQRgBSz55KQhPc
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJLZbPPs2rQjQRgBSz55KQhPc) already exists.
+
+Violating placeId: ChIJvU5mgSmqQjQR0WhA_Zruk5E
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJvU5mgSmqQjQR0WhA_Zruk5E) already exists.
+
+Violating placeId: ChIJT8VntiyqQjQRVy8NDCyuodY
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJT8VntiyqQjQRVy8NDCyuodY) already exists.
+
+Violating placeId: ChIJnfFiuHerQjQRxjNllh1WrZ0
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJnfFiuHerQjQRxjNllh1WrZ0) already exists.
+
+Violating placeId: ChIJI2raooCrQjQRy8afzNKOplQ
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJI2raooCrQjQRy8afzNKOplQ) already exists.
+
+Violating placeId: ChIJmRQzc9CrQjQRcFA4EouB8lU
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJmRQzc9CrQjQRcFA4EouB8lU) already exists.
+
+Violating placeId: ChIJ637p3ByrQjQR6vTxxYYto5Y
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJ637p3ByrQjQR6vTxxYYto5Y) already exists.
+
+Violating placeId: ChIJlw8rK9irQjQR9SCA4LSBopo
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJlw8rK9irQjQR9SCA4LSBopo) already exists.
+
+Violating placeId: ChIJJ7wCL_arQjQR5pybOW09yr4
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJJ7wCL_arQjQR5pybOW09yr4) already exists.
+
+Violating placeId: ChIJt5OKts-rQjQRxF4W2kf_-K4
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJt5OKts-rQjQRxF4W2kf_-K4) already exists.
+
+Violating placeId: ChIJo2DeNn-pQjQREJSmWM8mP7g
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJo2DeNn-pQjQREJSmWM8mP7g) already exists.
+
+Violating placeId: ChIJITLbrdGrQjQRQ9aDV5jsPxg
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJITLbrdGrQjQRQ9aDV5jsPxg) already exists.
+
+Violating placeId: ChIJb-x9n7erQjQRml4I95i_cMg
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJb-x9n7erQjQRml4I95i_cMg) already exists.
+
+Violating placeId: ChIJM4An6tqrQjQRvxJaiYT-L4Q
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJM4An6tqrQjQRvxJaiYT-L4Q) already exists.
+
+Violating placeId: ChIJbdBsusirQjQRyfJ68q5IH5o
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJbdBsusirQjQRyfJ68q5IH5o) already exists.
+
+Violating placeId: ChIJAQAAANWrQjQRH3AJjAV5lw8
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJAQAAANWrQjQRH3AJjAV5lw8) already exists.
+
+Violating placeId: ChIJKxU6RQCrQjQRtUw2VdC7VAw
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJKxU6RQCrQjQRtUw2VdC7VAw) already exists.
+
+Violating placeId: ChIJ90ln_c-rQjQRp2jywC1baXs
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJ90ln_c-rQjQRp2jywC1baXs) already exists.
+
+Violating placeId: ChIJr9waetqrQjQRwCR2Z7RaTnQ
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJr9waetqrQjQRwCR2Z7RaTnQ) already exists.
+
+Violating placeId: ChIJZxHWZiCrQjQRAdt0K4KjLmw
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJZxHWZiCrQjQRAdt0K4KjLmw) already exists.
+
+Violating placeId: ChIJNfVW_dCrQjQRg9C_qEES1Ak
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJNfVW_dCrQjQRg9C_qEES1Ak) already exists.
+
+Violating placeId: ChIJvQxcmc-rQjQRaUwlnmvmiRo
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJvQxcmc-rQjQRaUwlnmvmiRo) already exists.
+
+Violating placeId: ChIJJ-iwB9GrQjQRpLAf18y7eNo
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJJ-iwB9GrQjQRpLAf18y7eNo) already exists.
+
+Violating placeId: ChIJn5OMO-2sQjQR342e0SjlCts
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJn5OMO-2sQjQR342e0SjlCts) already exists.
+
+Violating placeId: ChIJxcYXoSWrQjQRk0UEolx-iGM
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJxcYXoSWrQjQRk0UEolx-iGM) already exists.
+
+Violating placeId: ChIJV8swk9urQjQR1ee_CCk2Si0
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJV8swk9urQjQR1ee_CCk2Si0) already exists.
+
+Violating placeId: ChIJxdRGEdirQjQRKLWOk-uOq5k
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJxdRGEdirQjQRKLWOk-uOq5k) already exists.
+
+Violating placeId: ChIJmYvKcaKrQjQRP84_3tp7iW0
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJmYvKcaKrQjQRP84_3tp7iW0) already exists.
+
+Violating placeId: ChIJhdSMjJerQjQROHORrIvofsA
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJhdSMjJerQjQROHORrIvofsA) already exists.
+
+Violating placeId: ChIJxXX-hDCrQjQRE9_b286Jl9A
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJxXX-hDCrQjQRE9_b286Jl9A) already exists.
+
+Violating placeId: ChIJtfa-sdOrQjQRrNNcyU3LwBc
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJtfa-sdOrQjQRrNNcyU3LwBc) already exists.
+
+Violating placeId: ChIJt9661tCrQjQRXMVpa4A5Bmg
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJt9661tCrQjQRXMVpa4A5Bmg) already exists.
+
+Violating placeId: ChIJB0HMYNGrQjQRcy0W0pVMk6U
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJB0HMYNGrQjQRcy0W0pVMk6U) already exists.
+
+Violating placeId: ChIJEyTR1dqrQjQRgPp_K_3LDp0
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJEyTR1dqrQjQRgPp_K_3LDp0) already exists.
+
+Violating placeId: ChIJrRR9bYSpQjQRPhG2Al-8bhE
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJrRR9bYSpQjQRPhG2Al-8bhE) already exists.
+
+Violating placeId: ChIJZao7HZCpQjQR_f7TUA3Edyk
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJZao7HZCpQjQR_f7TUA3Edyk) already exists.
+
+Violating placeId: ChIJ97_CUYKpQjQRoiw8x6BqopA
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJ97_CUYKpQjQRoiw8x6BqopA) already exists.
+
+Violating placeId: ChIJnRcTOompQjQRcLgKdw9VlAM
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJnRcTOompQjQRcLgKdw9VlAM) already exists.
+
+Violating placeId: ChIJD7erO62pQjQRb2M5ixAxGic
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJD7erO62pQjQRb2M5ixAxGic) already exists.
+
+Violating placeId: ChIJ99KeQJupQjQRQA6rr2fzqvo
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJ99KeQJupQjQRQA6rr2fzqvo) already exists.
+
+Violating placeId: ChIJN1y6RacCaDQRElenCbyeN2w
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJN1y6RacCaDQRElenCbyeN2w) already exists.
+
+Violating placeId: ChIJ9biYWoKpQjQRIEFdxx31tmg
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJ9biYWoKpQjQRIEFdxx31tmg) already exists.
+
+Violating placeId: ChIJIRNb73OpQjQRVmI3iE_whtw
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJIRNb73OpQjQRVmI3iE_whtw) already exists.
+
+Violating placeId: ChIJYy_NnH-pQjQRPBVk_ywGT0s
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJYy_NnH-pQjQRPBVk_ywGT0s) already exists.
+
+Violating placeId: ChIJ5Zls-surQjQRtQ0XFunyOtY
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJ5Zls-surQjQRtQ0XFunyOtY) already exists.
+
+Violating placeId: ChIJD_HEZY-pQjQRRtBtmpSmIX8
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJD_HEZY-pQjQRRtBtmpSmIX8) already exists.
+
+Violating placeId: ChIJ8Zwce4-pQjQROVZbEmp8Yhs
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJ8Zwce4-pQjQROVZbEmp8Yhs) already exists.
+
+Violating placeId: ChIJv-hOkoOpQjQRPTB6zvoTpFk
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJv-hOkoOpQjQRPTB6zvoTpFk) already exists.
+
+Violating placeId: ChIJr6IyQjupQjQRWN7n9hftuak
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJr6IyQjupQjQRWN7n9hftuak) already exists.
+
+Violating placeId: ChIJHTQHYI-pQjQRqU4LFb5A6pU
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJHTQHYI-pQjQRqU4LFb5A6pU) already exists.
+
+Violating placeId: ChIJH5-rp4-pQjQRrOiJjGdyaMs
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJH5-rp4-pQjQRrOiJjGdyaMs) already exists.
+
+Violating placeId: ChIJ59YyhpqpQjQRAN1fCaIYrn0
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJ59YyhpqpQjQRAN1fCaIYrn0) already exists.
+
+Violating placeId: ChIJh8vlnYOpQjQRUR6sHTr34x4
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJh8vlnYOpQjQRUR6sHTr34x4) already exists.
+
+Violating placeId: ChIJVVVVVRWsQjQRmiia4KI2hXk
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJVVVVVRWsQjQRmiia4KI2hXk) already exists.
+
+Violating placeId: ChIJ8fkIRYKpQjQR558305t-wZQ
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJ8fkIRYKpQjQR558305t-wZQ) already exists.
+
+Violating placeId: ChIJ_8XKO4mpQjQRXrQdCkXI3gk
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJ_8XKO4mpQjQRXrQdCkXI3gk) already exists.
+
+Violating placeId: ChIJO4lhio-pQjQRfksW7DahqLs
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJO4lhio-pQjQRfksW7DahqLs) already exists.
+
+Violating placeId: ChIJibxETYKpQjQRnJOXvfnziVU
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJibxETYKpQjQRnJOXvfnziVU) already exists.
+
+Violating placeId: ChIJ2c7OvYOpQjQR0gsYO_lmsKw
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJ2c7OvYOpQjQR0gsYO_lmsKw) already exists.
+
+Violating placeId: ChIJ0SDGV4apQjQRcrnjO_zJZiM
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJ0SDGV4apQjQRcrnjO_zJZiM) already exists.
+
+Violating placeId: ChIJA-CSdISpQjQRdIySsQDlW6Y
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJA-CSdISpQjQRdIySsQDlW6Y) already exists.
+
+Violating placeId: ChIJbQl4d4OpQjQRxinMmrbMGNU
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJbQl4d4OpQjQRxinMmrbMGNU) already exists.
+
+Violating placeId: ChIJMVwDd4OpQjQRE1PT6aGqzSw
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJMVwDd4OpQjQRE1PT6aGqzSw) already exists.
+
+Violating placeId: ChIJP1roTIKpQjQRvFzgqFnpjzk
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJP1roTIKpQjQRvFzgqFnpjzk) already exists.
+
+Violating placeId: ChIJzeBtdYSpQjQRop5qz3tZxW0
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJzeBtdYSpQjQRop5qz3tZxW0) already exists.
+
+Violating placeId: ChIJ5xyebaypQjQRKeqNEK_tcRc
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJ5xyebaypQjQRKeqNEK_tcRc) already exists.
+
+Violating placeId: ChIJNTAArY-pQjQR0G-DgiWp9dc
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJNTAArY-pQjQR0G-DgiWp9dc) already exists.
+
+Violating placeId: ChIJkbMnsYOpQjQRdVNvT-F0qBA
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJkbMnsYOpQjQRdVNvT-F0qBA) already exists.
+
+Violating placeId: ChIJmxpmfIWpQjQRuO6qJKcBk74
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJmxpmfIWpQjQRuO6qJKcBk74) already exists.
+
+Violating placeId: ChIJPdw6ioOpQjQRcCS3k8XfNnE
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJPdw6ioOpQjQRcCS3k8XfNnE) already exists.
+
+Violating placeId: ChIJ9ykc3cKpQjQRNbYz1-daEMU
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJ9ykc3cKpQjQRNbYz1-daEMU) already exists.
+
+Violating placeId: ChIJy6vPnYOpQjQROLEuho5E-Fk
+Rolling back due to error:  duplicate key value violates unique constraint "restaurants_pkey"
+DETAIL:  Key (placeid)=(ChIJy6vPnYOpQjQROLEuho5E-Fk) already exists.
+
+../json-data/zhongzheng-district-restaurants.jsoninserted successfully.
+Full list of types: ['chinese_restaurant', 'restaurant', 'mexican_restaurant', 'american_restaurant', 'japanese_restaurant', 'brunch_restaurant', 'breakfast_restaurant', 'store', 'sushi_restaurant', 'korean_restaurant', 'consultant', 'grocery_store', 'health', 'ramen_restaurant', 'thai_restaurant', 'vegetarian_restaurant', 'event_venue', 'italian_restaurant', 'vietnamese_restaurant', 'vegan_restaurant', 'art_gallery', 'bar', 'indian_restaurant', 'seafood_restaurant', 'coffee_shop', 'cafe', 'spanish_restaurant', 'middle_eastern_restaurant', 'fast_food_restaurant', 'hamburger_restaurant', 'pizza_restaurant', 'french_restaurant', 'indonesian_restaurant', 'steak_house', 'meal_takeaway', 'liquor_store', 'wholesaler', 'mediterranean_restaurant', 'bakery', 'barbecue_restaurant', 'meal_delivery', 'night_club', 'greek_restaurant', 'ice_cream_shop', 'home_goods_store', 'furniture_store', 'home_improvement_store', 'market', 'turkish_restaurant', 'sandwich_shop', 'banquet_hall', 'convention_center', 'clothing_store', 'wedding_venue', 'performing_arts_theater']

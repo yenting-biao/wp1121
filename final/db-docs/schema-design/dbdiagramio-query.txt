@@ -1,0 +1,82 @@
+Table USERS {
+  userId uuid [primary key, default: `gen_random_uuid()`]
+  ntuEmail varchar(63) [not null, unique]
+  username varchar(80) [not null]
+  hashedPassword varchar(255) [not null]
+  avatarUrl varchar
+}
+
+Table RESTAURANTS {
+  placeId varchar(300) [primary key]
+  name text [not null]
+  address text [not null]
+  latitude double [not null]
+  longitude double [not null]
+}
+
+Table OPENING_HOURS {
+  displayId uuid [primary key, default: `gen_random_uuid()`]
+  placeId varchar(300)
+  day varchar(100) [not null]
+  hours varchar(100) [not null]
+}
+Ref: OPENING_HOURS.placeId > RESTAURANTS.placeId [delete: cascade, update: cascade]
+
+Table RESTAURANT_TYPES {
+  placeId varchar(300) [primary key]
+  type varchar(100) [primary key]
+}
+Ref: RESTAURANT_TYPES.placeId > RESTAURANTS.placeId [delete: cascade, update: cascade]
+
+Table REVIEWS {
+  placeId varchar(300) [not null]
+  reviewerId uuid
+  stars int [not null]
+  content text
+  expense int
+  createdAt timestamp [not null, default: `now()`]
+}
+Ref: REVIEWS.placeId > RESTAURANTS.placeId [delete: cascade, update: cascade]
+Ref: REVIEWS.reviewerId > USERS.userId [delete: set null, update: cascade]
+
+Table TAGS {
+  tagId uuid [primary key, default: `gen_random_uuid()`]
+  tagName varchar(50) [not null]
+}
+
+Table TAG_OWNERS {
+  tagId uuid [primary key]
+  ownerId uuid [primary key]
+}
+Ref: TAG_OWNERS.tagId > TAGS.tagId [delete: cascade, update: cascade]
+Ref: TAG_OWNERS.ownerId > USERS.userId [delete: cascade, update: cascade]
+
+Table TAGGED_RESTAURANTS {
+  tagId uuid [primary key]
+  placeId varchar(300) [primary key]
+}
+Ref: TAGGED_RESTAURANTS.tagId > TAGS.tagId [delete: cascade, update: cascade]
+Ref: TAGGED_RESTAURANTS.placeId > RESTAURANTS.placeId [delete: cascade, update: cascade]
+
+Table DATES {
+  dateId uuid [primary key, default: `gen_random_uuid()`]
+  occuredAt timestamp [not null]
+}
+
+Table DATE_PARTICIPANTS {
+  displayId uuid [primary key, default: `gen_random_uuid()`]
+  dateId uuid [not null]
+  participantId uuid
+}
+Ref: DATE_PARTICIPANTS.dateId > DATES.dateId [delete: cascade, update: cascade]
+Ref: DATE_PARTICIPANTS.participantId > USERS.userId [delete: set null, update: cascade]
+
+TABLE PRIVATE_MESSAGES {
+  messageId uuid [primary key, default: `gen_random_uuid()`]
+  dateId uuid [not null]
+  senderId uuid
+  sentAt timestamp [default: `now()`]
+  content text [not null]
+}
+Ref: PRIVATE_MESSAGES.dateId > DATES.dateId [delete: cascade, update: cascade]
+Ref: PRIVATE_MESSAGES.senderId > USERS.userId [delete: set null, update: cascade]
