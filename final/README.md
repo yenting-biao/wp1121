@@ -3,7 +3,7 @@
 ## (Group 03) 不揪 Food Date
 
 ## Demo Video Link
-
+<https://youtu.be/aZyxmZ7_XYg>
 
 
 ## Deployed Link
