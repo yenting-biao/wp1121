@@ -19,6 +19,7 @@ _不揪 Food Date_ is a powerful restaurant gathering app. Each user can browse 
 We allow users to sign up for regular accounts, but also provide an admin account as follows for you:
 - Account:  admin@ntu.edu.tw
 - Password: fShfdfrRF9fus9Y
+
 You can register regular account and enjoy all of our services, and use admin account to create and delete missions.
 
 ## Packages/Framework/Code Ref
