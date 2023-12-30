@@ -75,8 +75,11 @@ postgresql://wpfooddate:ny10rapwHxcm@ep-curly-leaf-13171890.ap-southeast-1.aws.n
 
 ### Tasks
 標彥廷：UI設計、頁面切割、profile頁面、admin帳號相關、mission相關、資料庫設計
+
 李梁玉軒：restaurant頁面、restaurants資料更新與即時處理、googleMap API相關
+
 荻本俊輝：資料庫設計、git技術指導、聚餐配對頁面、聊天室頁面與通知、Pusher服務架設
+
 外掛：無
 
 ### Disclaimer
