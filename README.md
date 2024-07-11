@@ -1,4 +1,2 @@
-# Web Programming Class Repo Template
-- Class Website: https://wp.ee.ntu.edu.tw
-- Webex Meeting Link: [Link](https://ntucc.webex.com/meet/cyhuang)
-- Webex User Guide: [Link](https://hackmd.io/9H-sQ4krS_CgTsVr2BflRQ?view)
+# 112-1 Web Programming Course Homework And Project
+This is the repository of my homework and projects when I took the course, Web Programming. I learned a lot of technologies of both frontend and backend in this course, including React.js, Next.js, Express.js, MongoDB, PostgreSQL, etc. Please refer to the README in each project for more details.
